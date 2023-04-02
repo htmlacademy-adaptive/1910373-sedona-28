@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body class="page__body">
+  <header class="header">
+    <a class="header__logo" href="index.html">
+      <img src="./img/content/logo.svg" alt="Логотип Седоны." width="185" height="96">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню навигации.</span>
+      </button>
+      <div class="main-nav__container">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--current">
+            <a class="site-list_link" href="#">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list_link" href="#">Фото и видео</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list_link" href="#">Форма отзыва</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list_link" href="#">Html academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="main-index">
+    <section class="greetings">
+      <div class="greetings__container">
+        <img class="greetings__image" src="./img/content/sedona-section-form.svg" alt="Добро пожаловать в Седону."
+          width="229" height="39">
+      </div>
+    </section>
+    <section class="media-content">
+      <div class="media-content__container">
+        <div class="intro-media">
+          <h2 class=" title">Фото и видео</h2>
+          <p class="description">Не можете решиться на путешествие из-за курса?
+            Фотографии помогут вам забыть о политике и экономике</p>
+        </div>
+        <ul class="media-content__list media-cards">
+          <li class="media-cards__item">
+            <figure class="media-cards__post">
+              <img class="media-cards__image" src="./img/content/road.jpg" alt="Дорога посреди гор." width="280"
+                height="280">
+              <figcaption class="media-cards__title">неродные просторы</figcaption>
+              <p class="media-cards__autor">Автор фото: Борис</p>
+              <span class="media-cards__counter media-cards__counter--icons">1350</span>
+            </figure>
+          </li>
+          <li class="media-cards__item">
+            <figure class="media-cards__post">
+              <img lass="media-cards__image" src="./img/content/vegetation.jpg" alt="Кактус на фоне каньона."
+                width="280" height="280">
+              <figcaption class="media-cards__title">местная растительность</figcaption>
+              <p class="media-cards__autor">Автор фото: Сергей</p>
+              <span class="media-cards__counter media-cards__counter--icons">143</span>
+            </figure>
+          </li>
+          <li class="media-cards__item">
+            <figure class="media-cards__post">
+              <img lass="media-cards__image" src="./img/content/road-to-the-north.jpg"
+                alt="Серпантин среди хвойной природы." width="280" height="280">
+              <figcaption class="media-cards__title">дорога на север</figcaption>
+              <p class="media-cards__autor">Автор фото: Петр</p>
+              <span class="media-cards__counter media-cards__counter--icons">96</span>
+            </figure>
+          </li>
+          <li class="media-cards__item">
+            <figure class="media-cards__post">
+              <img lass="media-cards__image" src="./img/content/devil-bridge.jpg" alt="Серпантин среди хвойной природы."
+                width="280" height="280">
+              <figcaption class="media-cards__title">мост дьявола</figcaption>
+              <p class="media-cards__autor">Автор фото: Антон</p>
+              <span class="media-cards__counter media-cards__counter--icons">254</span>
+            </figure>
+          </li>
+        </ul>
+        <div class="intro-media">
+          <h2 class="title">Все еще сомневаетесь?</h2>
+          <p class="description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
+            очередной раз!</p>
+        </div>
+        <video controls preload="metadata" width="280" height="177">
+          <source src="" type="video/mp4">
+        </video>
+      </div>
+    </section>
+
+  </main>
+  <footer class="main-footer">
+    <div class="main-footer__container">
+      <div class="main-footer__visit hashtag-visit">
+        <a class="hashtag-visit__link" href="#">#visitsedona</a>
+      </div>
+      <div class="main-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social_link social_link--vkontakte" href="#">
+              <span class="visually-hidden">Седона в вконтакте.</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social_link social_link--telegram" href="#">
+              <span class="visually-hidden">Седона в телеграм.</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social_link social_link--youtube" href="#">
+              <span class="visually-hidden">Седона в ютьюб.</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="production">
+        <span class="production__word">производство</span>
+        <a class="production__link" href="#">
+          <span class="visually-hidden">Переход на главную страницу HTML академии.</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
