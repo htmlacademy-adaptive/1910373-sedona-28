@@ -16,6 +16,8 @@
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
+ "scripts": {
+    "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "lint": "npm run editorconfig && npm run stylelint",
     "build": "gulp styles",
