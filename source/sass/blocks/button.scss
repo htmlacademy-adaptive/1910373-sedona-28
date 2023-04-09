@@ -1,0 +1,12 @@
+.button {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-flex;
+  border: none;
+  background-color: $color-seagull;
+  color: $color-default-white;
+}

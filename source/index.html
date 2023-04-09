@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Седона</title>
 </head>
 
@@ -22,13 +23,14 @@
             <a class="site-nav__link" href="#">Главная</a>
           </li>
           <li class="site-nav__item">
-            <a class="site-nav__link" href="#">Фото и видео</a>
+            <a class="site-nav__link" href="catalog.html">Фото и видео</a>
           </li>
           <li class="site-nav__item">
-            <a class="site-nav__link" href="#">Форма отзыва</a>
+            <a class="site-nav__link" href="form.html">Форма отзыва</a>
           </li>
           <li class="site-nav__item">
-            <a class="site-nav__link" href="#" target="_blank" rel="nofollow noopener">Html academy</a>
+            <a class="site-nav__link" href="https://htmlacademy.ru/" target="_blank" rel="nofollow noopener">Html
+              academy</a>
           </li>
         </ul>
       </nav>
@@ -37,7 +39,7 @@
       <h1 class="visually-hidden">Сайт городка Седона.</h1>
       <section class="greetings">
         <h2 class="visually-hidden">Седона - сервис бронирования отелей.</h2>
-        <img class="greetings__image" src="./img/content/welcome-sedona.jpg" alt="Добро пожаловать в Седону."
+        <img class="greetings__image" src="./img/content/welcome-sedona.png" alt="Добро пожаловать в Седону."
           width="282" height="214">
       </section>
       <section class="advantages">
@@ -50,9 +52,11 @@
           <li class="services__item services__item--blue-background">
             <figure class="services__post">
               <figcaption class="services__specification">
-                <h2 class="services__title">Настоящий городок</h2>
-                <span class="services__counter">№1</span>
-                <p class="services__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+                <h2 class="services__title services__title--white-text">Настоящий городок</h2>
+                <span class="services__counter services__counter--white-text">№1</span>
+                <p class="services__description services__description--white-text">Седона не аттракцион для туристов,
+                  там течет своя
+                  жизнь</p>
               </figcaption>
               <img class="services__images" src="./img/content/sedona-town.jpg" alt="Изображение городка среди гор."
                 width="320" height="260">
@@ -77,25 +81,26 @@
           <li class="services__item services__item--blue-background">
             <figure class="services__post">
               <figcaption class="services__specification">
-                <h2 class="services__title">Там есть мост дьявола</h2>
-                <span class="services__counter">№2</span>
-                <p class="services__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+                <h2 class="services__title services__title--white-text">Там есть мост дьявола</h2>
+                <span class="services__counter services__counter--white-text">№2</span>
+                <p class="services__description services__description--white-text">Да, по нему можно пройти! Если вы
+                  осмелитесь, конечно</p>
               </figcaption>
               <img class="services__images" src="./img/content/devil-bridge.jpg" alt="Изображение моста над пропастью."
                 width="320" height="260">
             </figure>
           </li>
-          <li class="services__item">
+          <li class="services__item services__item--whisper-background">
             <h2 class="services__title">Небольшая площадь</h2>
             <span class="services__counter">№3</span>
             <p class="services__description">Все интересные места находятся очень близко</p>
           </li>
-          <li class="services__item">
+          <li class="services__item services__item--whisper-background">
             <h2 class="services__title">Красивая дорога</h2>
             <span class="services__counter">№4</span>
             <p class="services__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          <li class="services__item">
+          <li class="services__item services__item--whisper-background">
             <h2 class="services__title">Мало туристов</h2>
             <span class="services__counter">№5</span>
             <p class="services__description">Большинство едет в гранд каньон и толпится там</p>
@@ -104,11 +109,11 @@
       </section>
       <section class="search-hotels">
         <div class="search-hotels__heading heading">
-          <h2 class="heading__title">Заинтересовались?</h2>
-          <p class="heading__description">Укажите предполагаемые
+          <h2 class="heading__title heading__title-big-font">Заинтересовались?</h2>
+          <p class="heading__description heading__description-big-font">Укажите предполагаемые
             даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
         </div>
-        <a class="search-hotels__link" href="#">Найти гостиницу</a>
+        <a class="search-hotels__button button" href="#">Найти гостиницу</a>
       </section>
       <section class="map-content">
         <h2 class="visually-hidden">Местоположение Седоны.</h2>
@@ -135,7 +140,7 @@
         </li>
       </ul>
       <a class="main-footer__copyright" href="#" target="_blank" rel="nofollow noopener">
-        Разработано
+        <span class="main-footer__copyright-text">Разработано</span>
         <span class="visually-hidden">Переход на главную страницу HTML академии.</span>
         <svg class="main-footer__copyright-logo" aria-hidden="true" focusable="false" role="img"
           xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="none">

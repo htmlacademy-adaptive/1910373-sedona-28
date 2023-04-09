@@ -1,0 +1,54 @@
+.services {
+  @include reset-list;
+}
+
+.services__item--blue-background {
+  background-color: $color-seagull;
+}
+
+.services__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-default-black;
+}
+
+.services__description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-night-rider;
+}
+
+.services__counter {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  color: $color-night-rider;
+}
+
+.services__title--white-text,
+.services__description--white-text,
+.services__counter--white-text {
+  color: $color-default-white;
+}
+
+.heading__title-big-font,
+.heading__description-big-font {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.services__item--whisper-background {
+  background-color: $color-whisper;
+}

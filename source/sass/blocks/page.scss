@@ -1,0 +1,8 @@
+.page__body {
+  font-family: $ff-ptsans;
+  margin: 0;
+  color: $color-default-black;
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+}

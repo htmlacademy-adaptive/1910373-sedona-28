@@ -1,0 +1,13 @@
+.site-nav {
+  @include reset-list;
+}
+
+.site-nav__link {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-decoration: none;
+  color: $color-default-black;
+  text-transform: uppercase;
+}

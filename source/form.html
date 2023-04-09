@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Седона</title>
 </head>
 
@@ -19,16 +20,16 @@
         </a>
         <ul class="main-nav__list site-nav">
           <li class="site-nav__item site-nav__item--current">
-            <a class="site-nav__link" href="#">Главная</a>
+            <a class="site-nav__link" href="index.html">Главная</a>
           </li>
           <li class="site-nav__item">
-            <a class="site-nav__link" href="#">Фото и видео</a>
+            <a class="site-nav__link" href="catalog.html">Фото и видео</a>
           </li>
           <li class="site-nav__item">
-            <a class="site-nav__link" href="#">Форма отзыва</a>
+            <a class="site-nav__link site-nav__item--current" href="#">Форма отзыва</a>
           </li>
           <li class="site-nav__item">
-            <a class="site-nav__link" href="#" target="_blank" rel="nofollow noopener">Html academy</a>
+            <a class="site-nav__link" href="https://htmlacademy.ru/" target="_blank" rel="nofollow noopener">Html academy</a>
           </li>
         </ul>
       </nav>
@@ -144,10 +145,10 @@
           </fieldset>
           <fieldset class="form__fieldset">
             <legend class="form__title">Опишите свои эмоции:</legend>
-            <label class="form__label">
+            <label class="form__label text-field">
               <span class="visually-hidden">Опишите подробно все свои восторги.</span>
-              <textarea class="form__textarea" name="feedback-textarea" cols="30" rows="10"
-                placeholder="Опишите подробно все свои восторги."></textarea>
+              <textarea class="text-field__input text-field__input--resize-non" name="feedback-textarea" cols="30" rows="10"
+                placeholder="Опишите подробно все свои восторги"></textarea>
             </label>
           </fieldset>
           <button class="form__submit-button button" type="submit">Отправить отзыв</button>
@@ -175,7 +176,7 @@
         </li>
       </ul>
       <a class="main-footer__copyright" href="#" target="_blank" rel="nofollow noopener">
-        Разработано
+        <span class="main-footer__copyright-text">Разработано</span>
         <span class="visually-hidden">Переход на главную страницу HTML академии.</span>
         <svg class="main-footer__copyright-logo" aria-hidden="true" focusable="false" role="img"
           xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="none">

@@ -1,0 +1,22 @@
+.text-field {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: $color-night-rider;
+}
+
+.text-field__input {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  border: none;
+  color: $color-default-black;
+  background-color: $color-white-smoke;
+}
+
+.text-field__input--resize-non {
+  resize: none;
+}

@@ -1,0 +1,35 @@
+.form__rating-list {
+  @include reset-list;
+}
+
+.form__attraction-list {
+  @include reset-list;
+}
+
+.form__fieldset {
+  @include reset-fieldset;
+}
+
+.form__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-default-black;
+}
+
+.form__submit-button {
+  padding: 16px 49px;
+}
+
+.form__footnote {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-footnote;
+}
