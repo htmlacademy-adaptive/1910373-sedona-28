@@ -1,4 +1,7 @@
-.search-hotels__button {
-  text-decoration: none;
-  padding: 16px 49px;
+.search-hotels {
+  padding: 38px 18px 49px 18px;
+
+  &__heading {
+    margin: 0 0 32px 0;
+  }
 }

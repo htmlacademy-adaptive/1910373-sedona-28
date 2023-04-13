@@ -1,34 +1,57 @@
 .media-cards {
-  @include reset-list;
-}
-
-.media-cards__post {
   margin: 0;
-}
+  padding: 0;
 
-.media-cards__title {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 21px;
-  align-items: center;
-  text-transform: uppercase;
-}
+  list-style: none;
 
-.media-cards__author {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 21px;
-  align-items: center;
-  color: $color-night-rider;
-}
+  &__item {
+    margin: 0 0 50px 0;
+  }
 
-.media-cards__counter {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 21px;
-  align-items: center;
-  text-transform: uppercase;
+  &__post {
+    margin: 0;
+  }
+
+  &__title {
+    align-items: center;
+    margin: 0;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+  }
+
+  &__author {
+    align-items: center;
+    margin: 0;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color: $color-night-rider;
+  }
+
+  &__link {
+    display: block;
+    margin: 0 0 11px 0;
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+  }
+
+  &__counter {
+    align-items: center;
+    padding: 0 0 0 37px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+  }
 }

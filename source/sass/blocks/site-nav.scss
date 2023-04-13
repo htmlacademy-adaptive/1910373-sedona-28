@@ -1,13 +1,22 @@
 .site-nav {
-  @include reset-list;
-}
+  margin: 0;
+  padding: 0;
 
-.site-nav__link {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-decoration: none;
-  color: $color-default-black;
-  text-transform: uppercase;
+  list-style: none;
+
+  background-color: $color-seagull;
+
+  &__link {
+    display: block;
+    padding: 17px 60px 12px 60px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: $color-default-white;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
 }

@@ -37,7 +37,7 @@
     </header>
     <main class="main-index">
       <h1 class="visually-hidden">Сайт городка Седона.</h1>
-      <section class="greetings">
+      <section class="greetings greetings--index">
         <h2 class="visually-hidden">Седона - сервис бронирования отелей.</h2>
         <img class="greetings__image" src="./img/content/welcome-sedona.png" alt="Добро пожаловать в Седону."
           width="282" height="214">
@@ -48,69 +48,73 @@
           <p class="heading__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
           </p>
         </div>
-        <ul class="advantages__list services">
-          <li class="services__item services__item--blue-background">
-            <figure class="services__post">
-              <figcaption class="services__specification">
-                <h2 class="services__title services__title--white-text">Настоящий городок</h2>
-                <span class="services__counter services__counter--white-text">№1</span>
-                <p class="services__description services__description--white-text">Седона не аттракцион для туристов,
-                  там течет своя
-                  жизнь</p>
-              </figcaption>
-              <img class="services__images" src="./img/content/sedona-town.jpg" alt="Изображение городка среди гор."
-                width="320" height="260">
-            </figure>
-          </li>
-          <li class="services__item services__item--home">
-            <h3 class="services__title">Жилье</h3>
-            <p class="services__description">Рекомендуем пожить в
-              настоящем мотеле, все как в кино!</p>
-          </li>
-          <li class="services__item services__item--food">
-            <h3 class="services__title">Еда</h3>
-            <p class="services__description">Всегда заказывайте
-              фирменный бургер, вы не разочаруетесь!
-            </p>
-          </li>
-          <li class="services__item services__item--souvenirs">
-            <h3 class="services__title">Сувениры</h3>
-            <p class="services__description">Не только китайского, но
-              и местного производства!</p>
-          </li>
-          <li class="services__item services__item--blue-background">
-            <figure class="services__post">
-              <figcaption class="services__specification">
-                <h2 class="services__title services__title--white-text">Там есть мост дьявола</h2>
-                <span class="services__counter services__counter--white-text">№2</span>
-                <p class="services__description services__description--white-text">Да, по нему можно пройти! Если вы
-                  осмелитесь, конечно</p>
-              </figcaption>
-              <img class="services__images" src="./img/content/devil-bridge.jpg" alt="Изображение моста над пропастью."
-                width="320" height="260">
-            </figure>
-          </li>
-          <li class="services__item services__item--whisper-background">
-            <h2 class="services__title">Небольшая площадь</h2>
-            <span class="services__counter">№3</span>
-            <p class="services__description">Все интересные места находятся очень близко</p>
-          </li>
-          <li class="services__item services__item--whisper-background">
-            <h2 class="services__title">Красивая дорога</h2>
-            <span class="services__counter">№4</span>
-            <p class="services__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </li>
-          <li class="services__item services__item--whisper-background">
-            <h2 class="services__title">Мало туристов</h2>
-            <span class="services__counter">№5</span>
-            <p class="services__description">Большинство едет в гранд каньон и толпится там</p>
-          </li>
-        </ul>
+        <div class="advantages-content">
+          <figure class="advantages-content__post advantages-content__post--blue-background">
+            <figcaption class="advantages-content__specification">
+              <h2 class="advantages-content__title advantages-content__title--white-text">Настоящий
+                городок</h2>
+              <span class="advantages-content__counter advantages-content__counter--white-text counter">№1</span>
+              <p class="advantages-content__description advantages-content__description--white-text">
+                Седона не аттракцион для туристов,
+                там течет своя
+                жизнь</p>
+            </figcaption>
+            <img class="advantages-content__images" src="./img/content/sedona-town.jpg"
+              alt="Изображение городка среди гор." width="320" height="260">
+          </figure>
+          <ul class="advantages-content__list services">
+            <li class="services__item services__item--home">
+              <h3 class="services__title">Жилье</h3>
+              <p class="services__description">Рекомендуем пожить в
+                настоящем мотеле, все как в кино!</p>
+            </li>
+            <li class="services__item services__item--food">
+              <h3 class="services__title">Еда</h3>
+              <p class="services__description">Всегда заказывайте
+                фирменный бургер, вы не разочаруетесь!
+              </p>
+            </li>
+            <li class="services__item services__item--souvenirs">
+              <h3 class="services__title">Сувениры</h3>
+              <p class="services__description">Не только китайского, но
+                и местного производства!</p>
+            </li>
+          </ul>
+          <figure class="advantages-content__post advantages-content__post--blue-background">
+            <figcaption class="advantages-content__specification">
+              <h2 class="advantages-content__title advantages-content__title--white-text">Там есть мост
+                дьявола</h2>
+              <span class="advantages-content__counter advantages-content__counter--white-text counter">№2</span>
+              <p class="advantages-content__description advantages-content__description--white-text">Да,
+                по нему можно пройти! Если вы
+                осмелитесь, конечно</p>
+            </figcaption>
+            <img class="advantages-content__images" src="./img/content/devil-bridge.jpg"
+              alt="Изображение моста над пропастью." width="320" height="260">
+          </figure>
+          <ul class="advantages-content__privileage-list privileage privileage--whisper-background">
+            <li class="privileage__item">
+              <h2 class="privileage__title">Небольшая площадь</h2>
+              <span class="privileage__counter counter">№3</span>
+              <p class="privileage__description">Все интересные места находятся очень близко</p>
+            </li>
+            <li class="privileage__item">
+              <h2 class="privileage__title">Красивая дорога</h2>
+              <span class="privileage__counter counter">№4</span>
+              <p class="privileage__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </li>
+            <li class="privileage__item">
+              <h2 class="privileage__title">Мало туристов</h2>
+              <span class="privileage__counter counter">№5</span>
+              <p class="privileage__description">Большинство едет в гранд каньон и толпится там</p>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="search-hotels">
         <div class="search-hotels__heading heading">
           <h2 class="heading__title heading__title-big-font">Заинтересовались?</h2>
-          <p class="heading__description heading__description-big-font">Укажите предполагаемые
+          <p class="heading__description">Укажите предполагаемые
             даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
         </div>
         <a class="search-hotels__button button" href="#">Найти гостиницу</a>
@@ -139,15 +143,17 @@
           </a>
         </li>
       </ul>
-      <a class="main-footer__copyright" href="#" target="_blank" rel="nofollow noopener">
-        <span class="main-footer__copyright-text">Разработано</span>
-        <span class="visually-hidden">Переход на главную страницу HTML академии.</span>
-        <svg class="main-footer__copyright-logo" aria-hidden="true" focusable="false" role="img"
-          xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="none">
-          <path fill="#000"
-            d="M13.65.45h-.1L.05 1.85v24.7l13.5 8 13.4-8V1.85L13.65.45Zm11.4 12.1-11.5-6.8v-.1h-.1l-.1-.1v.1l-11.4 6.9v-9l11.5-1.2 11.6 1.2v9Zm-11.6-5.3 11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1-11.4-6.7 11.4-6.8Zm-11.5 8.3 11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9-11.5-6.8v-9.9Z" />
-        </svg>
-      </a>
+      <div class="main-footer__copyright-wrapper">
+        <a class="main-footer__copyright" href="#" target="_blank" rel="nofollow noopener">
+          <span class="main-footer__copyright-text">Разработано</span>
+          <span class="visually-hidden">Переход на главную страницу HTML академии.</span>
+          <svg class="main-footer__copyright-logo" aria-hidden="true" focusable="false" role="img"
+            xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="none">
+            <path fill="#000"
+              d="M13.65.45h-.1L.05 1.85v24.7l13.5 8 13.4-8V1.85L13.65.45Zm11.4 12.1-11.5-6.8v-.1h-.1l-.1-.1v.1l-11.4 6.9v-9l11.5-1.2 11.6 1.2v9Zm-11.6-5.3 11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1-11.4-6.7 11.4-6.8Zm-11.5 8.3 11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9-11.5-6.8v-9.9Z" />
+          </svg>
+        </a>
+      </div>
     </footer>
   </div>
 

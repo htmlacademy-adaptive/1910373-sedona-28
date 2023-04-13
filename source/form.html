@@ -29,7 +29,8 @@
             <a class="site-nav__link site-nav__item--current" href="#">Форма отзыва</a>
           </li>
           <li class="site-nav__item">
-            <a class="site-nav__link" href="https://htmlacademy.ru/" target="_blank" rel="nofollow noopener">Html academy</a>
+            <a class="site-nav__link" href="https://htmlacademy.ru/" target="_blank" rel="nofollow noopener">Html
+              academy</a>
           </li>
         </ul>
       </nav>
@@ -41,44 +42,44 @@
         <img class="greetings__image" src="./img/content/sedona-section-form.svg" alt="Добро пожаловать в Седону."
           width="229" height="39">
       </section>
-      <section class="feedback">
+      <section class="feedback feedback__wrapper">
         <div class="feedback__heading heading">
           <h2 class="heading__title">Оставьте свой отзыв</h2>
           <p class="heading__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а
             также о посещенных вами достопримечательностях</p>
         </div>
         <form class="feedback__form form" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset--position-first">
             <legend class="form__title">Представьтесь:</legend>
             <label class="form__field text-field">
-              Имя*:
+              <span class="text-field__title">Имя*:</span>
               <input class="text-field__input" name="user-name" type="text" placeholder="Имя" value="Пётр" required>
             </label>
             <label class="form__field text-field">
-              Фамилия*:
+              <span class="text-field__title">Фамилия*:</span>
               <input class="text-field__input" name="user-surname" type="text" placeholder="Фамилия" value="Пустота"
                 required>
             </label>
             <label class="form__field text-field">
-              Отчество:
+              <span class="text-field__title">Отчество:</span>
               <input class="text-field__input" name="user-patronymic" type="text" placeholder="Отчество"
                 value="Викторович">
             </label>
           </fieldset>
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset--position-second">
             <legend class="form__title">Контактная информация:</legend>
             <label class="form__field text-field">
-              Контактный телефон*:
+              <span class="text-field__title">Контактный телефон*:</span>
               <input class="text-field__input text-field__input--tel" name="user-phone" type="tel"
                 placeholder="Введите телефон" required>
             </label>
             <label class="form__field text-field">
-              Электронная почта*:
+              <span class="text-field__title"> Электронная почта*:</span>
               <input class="text-field__input text-field__input--mail" name="user-mail" type="email"
                 placeholder="Введите e-mail" required>
             </label>
           </fieldset>
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset--position-third">
             <legend class="form__title">Ваше общее впечатление:</legend>
             <ul class="form__rating-list">
               <li class="form__rating-item">
@@ -106,7 +107,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset--position-fourth">
             <legend class="form__title">посещенные достопримечательности:</legend>
             <ul class="form__attraction-list">
               <li class="form__attraction-item">
@@ -143,16 +144,18 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset--position-fifth">
             <legend class="form__title">Опишите свои эмоции:</legend>
             <label class="form__label text-field">
               <span class="visually-hidden">Опишите подробно все свои восторги.</span>
-              <textarea class="text-field__input text-field__input--resize-non" name="feedback-textarea" cols="30" rows="10"
-                placeholder="Опишите подробно все свои восторги"></textarea>
+              <textarea class="text-field__input text-field__input--resize-non" name="feedback-textarea" cols="30"
+                rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
             </label>
           </fieldset>
-          <button class="form__submit-button button" type="submit">Отправить отзыв</button>
-          <span class="form__footnote">* — обязательные поля</span>
+          <div class="form__button-wrapper">
+            <button class="form__submit-button button" type="submit">Отправить отзыв</button>
+            <span class="form__footnote">* — обязательные поля</span>
+          </div>
         </form>
       </section>
     </main>
@@ -175,15 +178,17 @@
           </a>
         </li>
       </ul>
-      <a class="main-footer__copyright" href="#" target="_blank" rel="nofollow noopener">
-        <span class="main-footer__copyright-text">Разработано</span>
-        <span class="visually-hidden">Переход на главную страницу HTML академии.</span>
-        <svg class="main-footer__copyright-logo" aria-hidden="true" focusable="false" role="img"
-          xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="none">
-          <path fill="#000"
-            d="M13.65.45h-.1L.05 1.85v24.7l13.5 8 13.4-8V1.85L13.65.45Zm11.4 12.1-11.5-6.8v-.1h-.1l-.1-.1v.1l-11.4 6.9v-9l11.5-1.2 11.6 1.2v9Zm-11.6-5.3 11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1-11.4-6.7 11.4-6.8Zm-11.5 8.3 11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9-11.5-6.8v-9.9Z" />
-        </svg>
-      </a>
+      <div class="main-footer__copyright-wrapper">
+        <a class="main-footer__copyright" href="#" target="_blank" rel="nofollow noopener">
+          <span class="main-footer__copyright-text">Разработано</span>
+          <span class="visually-hidden">Переход на главную страницу HTML академии.</span>
+          <svg class="main-footer__copyright-logo" aria-hidden="true" focusable="false" role="img"
+            xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="none">
+            <path fill="#000"
+              d="M13.65.45h-.1L.05 1.85v24.7l13.5 8 13.4-8V1.85L13.65.45Zm11.4 12.1-11.5-6.8v-.1h-.1l-.1-.1v.1l-11.4 6.9v-9l11.5-1.2 11.6 1.2v9Zm-11.6-5.3 11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1-11.4-6.7 11.4-6.8Zm-11.5 8.3 11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9-11.5-6.8v-9.9Z" />
+          </svg>
+        </a>
+      </div>
     </footer>
   </div>
 </body>

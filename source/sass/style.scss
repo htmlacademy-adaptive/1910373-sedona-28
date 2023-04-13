@@ -6,31 +6,29 @@
 @import "./global/utils.scss";
 
 //переменные
-@import "./variables.scss";
-
-//миксины
-@import "./mixins.scss";
+@import "./global/variables.scss";
 
 //блоки
 @import "./blocks/advantages.scss";
 @import "./blocks/button.scss";
-@import "./blocks/container.scss";
 @import "./blocks/custom-field.scss";
-@import "./blocks/feedback.scss";
 @import "./blocks/form.scss";
 @import "./blocks/greetings.scss";
 @import "./blocks/heading.scss";
 @import "./blocks/main-footer.scss";
-@import "./blocks/main-header.scss";
-@import "./blocks/main-index.scss";
-@import "./blocks/main-nav.scss";
-@import "./blocks/map-content.scss";
 @import "./blocks/media-cards.scss";
 @import "./blocks/search-hotels.scss";
 @import "./blocks/services.scss";
 @import "./blocks/site-nav.scss";
 @import "./blocks/social.scss";
 @import "./blocks/text-field.scss";
+@import "./blocks/page.scss";
+@import "./blocks/advantages-content.scss";
+@import "./blocks/counter.scss";
+@import "./blocks/privileage.scss";
+@import "./blocks/map-content.scss";
+@import "./blocks/container.scss";
+@import "./blocks/media-content.scss";
 @import "./blocks/video-content.scss";
 @import "./blocks/video-player.scss";
-@import "./blocks/page.scss";
+@import "./blocks/feedback.scss";

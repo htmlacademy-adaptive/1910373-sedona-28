@@ -1,31 +1,42 @@
-.services {
+.privileage {
   margin: 0;
-  padding: 18px 23px 46px 23px;
+  padding: 24px 18px 28px 18px;
 
   list-style: none;
 
   &__item {
-    padding: 0 0 0 47px;
+    padding: 0 8px 49px 8px;
   }
 
   &__title {
-    margin: 0 0 16px 0;
+    margin: 0 0 11px 0;
 
-    font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 26px;
-    text-align: left;
+    text-align: center;
     text-transform: uppercase;
   }
 
   &__description {
+    margin: 0;
+
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
-    text-align: left;
+    text-align: center;
     color: $color-night-rider;
     text-transform: uppercase;
+  }
+
+  &__counter {
+    margin: 0 0 17px 0;
+
+    color: $color-night-rider;
+  }
+
+  &--whisper-background {
+    background-color: $color-whisper;
   }
 }
