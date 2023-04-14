@@ -1,0 +1,17 @@
+.button {
+  display: block;
+  padding: 16px 49px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  color: $color-default-white;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: $color-seagull;
+  border: none;
+  cursor: pointer;
+}

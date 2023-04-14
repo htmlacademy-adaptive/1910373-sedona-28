@@ -1,0 +1,49 @@
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  padding: 33px 82px 33px 82px;
+
+  gap: 30px;
+
+  &__hashtag {
+    display: block;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__social {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 6px;
+  }
+
+  &__copyright-wrapper {
+    padding: 0 14px;
+  }
+
+  &__copyright {
+    display: flex;
+    justify-content: space-between;
+
+    text-decoration: none;
+  }
+
+  &__copyright-text {
+    display: inline-flex;
+    align-items: center;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: $color-default-black;
+    text-transform: uppercase;
+  }
+}

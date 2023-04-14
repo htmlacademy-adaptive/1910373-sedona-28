@@ -1,0 +1,22 @@
+.main-nav {
+  position: relative;
+
+  &__logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    display: block;
+
+    transform: translate(-50%);
+
+    &--hide {
+      display: none;
+    }
+  }
+
+  &__logo-image {
+    display: block;
+    max-width: none;
+  }
+}

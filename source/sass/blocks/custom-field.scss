@@ -1,0 +1,54 @@
+.custom-field__text {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 0 0 16px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.custom-field__input-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 46px;
+
+  background-color: $color-white-smoke;
+
+  &--radio {
+    position: relative;
+
+    border-radius: 50%;
+  }
+
+  &--checkbox {
+    border-radius: 4px;
+  }
+}
+
+.custom-field__input[type="radio"]:checked + .custom-field__input-icon::before {
+  content: "";
+  position: absolute;
+
+  display: block;
+  width: 16px;
+  height: 16px;
+
+  background-color: $color-night-rider;
+  border-radius: 50%;
+}
+
+.custom-field__input[type="checkbox"]:checked + .custom-field__input-icon::before {
+  content: "";
+  position: absolute;
+
+  width: 22px;
+  height: 16px;
+
+  background-image: url("../img/svg/check-mark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}

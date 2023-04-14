@@ -1,0 +1,36 @@
+.main-header {
+  position: relative;
+
+  padding-top: 56px;
+
+  &__nav {
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+  }
+
+  &__toggle {
+    position: absolute;
+    top: 17px;
+    right: 20px;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: $color-default-white;
+    border: none;
+    cursor: pointer;
+
+    gap: 5px;
+  }
+
+  &__toggle-line {
+    display: block;
+    width: 23px;
+    height: 4px;
+
+    background-color: $color-seagull;
+  }
+}

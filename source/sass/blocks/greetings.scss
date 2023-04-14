@@ -1,0 +1,26 @@
+.greetings {
+  min-height: 389px;
+
+  background-color: $color-default-black;
+
+  &__image {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &--index {
+    padding: 90px 19px 85px 19px;
+
+    background-image: url("../img/background/greetings-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &--inner {
+    padding: 52px 46px 67px 45px;
+
+    background-image: url("../img/background/greetings-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
