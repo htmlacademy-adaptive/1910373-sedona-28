@@ -25,6 +25,10 @@
 
     background-color: $color-white-smoke;
     border: none;
+
+    &::placeholder {
+      color: rgba($color-default-black, 0.3);
+    }
   }
 
   &__input--resize-non {
