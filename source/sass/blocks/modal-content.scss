@@ -1,0 +1,44 @@
+.modal-content {
+  width: 100%;
+
+  background-color: $color-default-white;
+  box-shadow: 0 7px 15px rgba($color-dark-green, 0.15);
+
+
+  &__title {
+    margin: 0 0 37px 0;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin: 0 0 28px 0;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__button {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+
+    &--error {
+      width: 76%;
+      padding: 18px 64px 14px 63px;
+    }
+
+    &--success {
+      padding: 18px 62px 14px 60px;
+    }
+  }
+}

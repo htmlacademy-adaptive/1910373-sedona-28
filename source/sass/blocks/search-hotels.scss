@@ -1,7 +1,15 @@
 .search-hotels {
   padding: 38px 18px 49px 18px;
 
+  @media (min-width: $vp-768) {
+    padding: 60px 155px 50px 155px;
+  }
+
   &__heading {
     margin: 0 0 32px 0;
+
+    @media (min-width: $vp-768) {
+      margin: 0 0 44px 0;
+    }
   }
 }

@@ -5,6 +5,13 @@
 
   gap: 30px;
 
+  @media (min-width: $vp-768) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 60px;
+  }
+
   &__hashtag {
     display: block;
 
@@ -21,17 +28,34 @@
     flex-wrap: wrap;
 
     gap: 6px;
+
+    @media (min-width: $vp-768) {
+      display: grid;
+
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 
   &__copyright-wrapper {
     padding: 0 14px;
+
+    @media (min-width: $vp-768) {
+      padding: 0;
+    }
   }
 
   &__copyright {
     display: flex;
-    justify-content: space-between;
 
     text-decoration: none;
+
+    gap: 11px;
+
+    @media (min-width: $vp-768) {
+      padding: 0;
+
+      gap: 12px;
+    }
   }
 
   &__copyright-text {

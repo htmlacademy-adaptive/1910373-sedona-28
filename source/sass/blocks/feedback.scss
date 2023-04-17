@@ -1,7 +1,16 @@
 .feedback__wrapper {
   padding: 36px 20px 22px 20px;
+
+  @media (min-width: $vp-768) {
+    padding: 64px 60px 64px 60px;
+  }
 }
 
 .feedback__heading {
   margin: 0 0 53px 0;
+
+  @media (min-width: $vp-768) {
+    margin: 0 0 108px 0;
+    padding: 0 106px;
+  }
 }

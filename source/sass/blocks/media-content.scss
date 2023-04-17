@@ -1,3 +1,7 @@
 .media-content__heading {
   margin: 0 0 50px 0;
+
+  @media (min-width: $vp-768) {
+    margin: 0 0 67px 0;
+  }
 }

@@ -10,17 +10,17 @@
 
 <body class="page__body">
   <div class="page__wrapper">
-    <header class="main-header">
+    <header class="main-header no-js">
       <button class="main-header__toggle" type="button">
         <span class="visually-hidden">Открыть/закрыть меню навигации.</span>
         <span class="main-header__toggle-line"></span>
         <span class="main-header__toggle-line"></span>
         <span class="main-header__toggle-line"></span>
       </button>
+      <a class="main-header__logo" href="index.html">
+        <img class="main-header__logo-image" src="./img/content/logo.svg" alt="Логотип Седоны." width="185" height="96">
+      </a>
       <nav class="main-header__nav main-nav">
-        <a class="main-nav__logo" href="index.html">
-          <img class="main-nav__logo-image" src="./img/content/logo.svg" alt="Логотип Седоны." width="185" height="96">
-        </a>
         <ul class="main-nav__list site-nav site-nav--hide">
           <li class="site-nav__item site-nav__item--current">
             <a class="site-nav__link" href="index.html">Главная</a>
@@ -47,12 +47,12 @@
       </section>
       <section class="feedback feedback__wrapper">
         <div class="feedback__heading heading">
-          <h2 class="heading__title">Оставьте свой отзыв</h2>
-          <p class="heading__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а
-            также о посещенных вами достопримечательностях</p>
+          <h2 class="heading__title heading__title--large-font">Оставьте свой отзыв</h2>
+          <p class="heading__description">Помогите нашим отелям стать лучше! оставьте отзыв о&nbsp;них, а
+            также о&nbsp;посещенных вами достопримечательностях</p>
         </div>
         <form class="feedback__form form" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="form__fieldset form__fieldset--position-first">
+          <fieldset class="form__fieldset">
             <legend class="form__title">Представьтесь:</legend>
             <label class="form__field text-field">
               <span class="text-field__title">Имя*:</span>
@@ -69,7 +69,7 @@
                 value="Викторович">
             </label>
           </fieldset>
-          <fieldset class="form__fieldset form__fieldset--position-second">
+          <fieldset class="form__fieldset">
             <legend class="form__title">Контактная информация:</legend>
             <label class="form__field text-field">
               <span class="text-field__title">Контактный телефон*:</span>
@@ -82,7 +82,7 @@
                 placeholder="Введите e-mail" required>
             </label>
           </fieldset>
-          <fieldset class="form__fieldset form__fieldset--position-third">
+          <fieldset class="form__fieldset">
             <legend class="form__title">Ваше общее впечатление:</legend>
             <ul class="form__rating-list">
               <li class="form__rating-item">
@@ -110,7 +110,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__fieldset form__fieldset--position-fourth">
+          <fieldset class="form__fieldset">
             <legend class="form__title">посещенные достопримечательности:</legend>
             <ul class="form__attraction-list">
               <li class="form__attraction-item">
@@ -147,7 +147,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__fieldset form__fieldset--position-fifth">
+          <fieldset class="form__fieldset">
             <legend class="form__title">Опишите свои эмоции:</legend>
             <label class="form__label text-field">
               <span class="visually-hidden">Опишите подробно все свои восторги.</span>
@@ -193,6 +193,21 @@
         </a>
       </div>
     </footer>
+    <!-- добавить класс is-open -->
+    <div class="modal is-open">
+      <div class="modal__failure modal-content">
+        <h2 class="modal-content__title">Что-то пошло не так!</h2>
+        <p class="modal-content__text">Проверьте поля, выделенные красным, скорее всего вы&nbsp;забыли их&nbsp;заполнить
+        </p>
+        <button class="modal-content__button modal-content__button--error button">Ок</button>
+      </div>
+      <div class="modal__success modal-content">
+        <h2 class="modal-content__title">Ваш отзыв отправлен!</h2>
+        <p class="modal-content__text">Спасибо за&nbsp;ваше участие, ваш отзыв уже поступил к&nbsp;нам.В ближайшее время
+          мы&nbsp;опубликуем его на&nbsp;сайте.</p>
+        <button class="modal-content__button modal-content__button--success button">Закрыть окно</button>
+      </div>
+    </div>
   </div>
   <script src="js/index.js"></script>
 </body>

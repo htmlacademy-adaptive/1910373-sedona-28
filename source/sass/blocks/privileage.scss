@@ -4,8 +4,19 @@
 
   list-style: none;
 
+  @media (min-width: $vp-768) {
+    display: grid;
+    padding: 0;
+
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   &__item {
     padding: 0 8px 49px 8px;
+
+    @media (min-width: $vp-768) {
+      padding: 41px 33px 63px 33px;
+    }
   }
 
   &__title {

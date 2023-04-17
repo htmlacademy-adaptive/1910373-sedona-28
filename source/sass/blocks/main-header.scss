@@ -1,13 +1,33 @@
 .main-header {
   position: relative;
 
-  padding-top: 56px;
+  min-height: 56px;
 
   &__nav {
     position: absolute;
     top: 0;
 
     width: 100%;
+
+    @media (min-width: $vp-768) {
+      position: static;
+    }
+  }
+
+  &__logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    display: block;
+    width: 185px;
+    height: 96px;
+
+    transform: translate(-50%);
+  }
+
+  &__logo-image {
+    display: block;
   }
 
   &__toggle {
@@ -24,6 +44,14 @@
     cursor: pointer;
 
     gap: 5px;
+
+    .no-js & {
+      display: none;
+    }
+
+    @media (min-width: $vp-768) {
+      display: none;
+    }
   }
 
   &__toggle-line {
