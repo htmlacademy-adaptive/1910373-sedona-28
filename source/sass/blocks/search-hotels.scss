@@ -1,8 +1,16 @@
 .search-hotels {
+  max-width: 580px;
+  margin: 0 auto;
   padding: 38px 18px 49px 18px;
 
   @media (min-width: $vp-768) {
     padding: 60px 155px 50px 155px;
+    margin: 0;
+    max-width: 100%;
+  }
+
+  @media (min-width: $vp-1200) {
+    padding: 60px 371px 66px 371px;
   }
 
   &__heading {

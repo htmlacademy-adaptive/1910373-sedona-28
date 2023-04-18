@@ -14,6 +14,11 @@
     line-height: 26px;
     text-align: center;
     text-transform: uppercase;
+
+    @media (min-width: $vp-768) {
+      font-size: 30px;
+      line-height: 40px;
+    }
   }
 
   &__text {
@@ -21,24 +26,45 @@
 
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 14px;
+    line-height: 21px;
     text-align: center;
     text-transform: uppercase;
   }
 
-  &__button {
-    display: block;
-    width: 100%;
-    margin: 0 auto;
+  &--failure {
+    display: none;
+    max-width: 400px;
+    padding: 45px 42px 35px 41px;
 
-    &--error {
-      width: 76%;
-      padding: 18px 64px 14px 63px;
+    @media (min-width: $vp-768) {
+      padding: 50px 47px 49px 46px;
+    }
+  }
+
+  &--success {
+    z-index: -1;
+
+    display: block;
+    max-width: 640px;
+    padding: 39px 20px 20px 20px;
+
+    .modal-content__text {
+      margin-bottom: 50px;
+      padding: 0 12px;
+
+      @media (min-width: $vp-768) {
+        margin-bottom: 74px;
+        padding: 0;
+      }
+
+      @media (min-width: $vp-1200) {
+        margin-bottom: 72px;
+      }
     }
 
-    &--success {
-      padding: 18px 62px 14px 60px;
+    @media (min-width: $vp-768) {
+      padding: 53px 91px 44px 91px;
     }
   }
 }

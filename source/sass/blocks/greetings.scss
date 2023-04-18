@@ -16,7 +16,13 @@
     background-size: cover;
 
     @media (min-width: $vp-768) {
+      padding: 77px 154px 91px 153px;
+
       background-image: url("../img/background/greetings-background-big.jpg");
+    }
+
+    @media (min-width: $vp-1200) {
+      padding: 78px 370px 90px 370px;
     }
   }
 
@@ -29,6 +35,12 @@
 
     @media (min-width: $vp-768) {
       padding: 95px 46px 117px 45px;
+
+      background-image: url("../img/background/greetings-background-big.jpg");
+    }
+
+    @media (min-width: $vp-1200) {
+      padding: 101px 371px 120px 369px;
     }
   }
 }

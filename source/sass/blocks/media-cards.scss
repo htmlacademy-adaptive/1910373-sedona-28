@@ -10,6 +10,12 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  @media (min-width: $vp-1200) {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   &__content {
     margin: 0 0 16px 0;
 
@@ -27,6 +33,10 @@
 
     &--full {
       grid-column: 1/span 2;
+
+      @media (min-width: $vp-1200) {
+        grid-column: 1/span 3;
+      }
     }
   }
 

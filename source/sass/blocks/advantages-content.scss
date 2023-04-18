@@ -19,6 +19,10 @@
   @media (min-width: $vp-768) {
     padding: 52px 33px 31px 33px;
   }
+
+  @media (min-width: $vp-1200) {
+    padding: 52px 50px 51px 50px;
+  }
 }
 
 .advantages-content__list {

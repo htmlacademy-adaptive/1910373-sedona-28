@@ -15,16 +15,4 @@
   &.is-open {
     display: flex;
   }
-
-  &__success {
-    display: none;
-    max-width: 640px;
-    padding: 39px 20px 20px 20px;
-  }
-
-  &__failure {
-    display: none;
-    max-width: 400px;
-    padding: 45px 41px 35px 42px;
-  }
 }
