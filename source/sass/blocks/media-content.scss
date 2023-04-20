@@ -1,3 +1,19 @@
-.media-content__heading {
-  margin: 0 0 50px 0;
+.media-content {
+  @media (min-width: $vp-768) {
+    margin-bottom: 62px;
+  }
+
+  &__heading {
+    margin: 0 0 50px 0;
+
+    @media (min-width: $vp-768) {
+      margin: 0 0 67px 0;
+      padding: 0 106px;
+    }
+
+    @media (min-width: $vp-1200) {
+      margin: 0;
+      padding: 100px 378px 65px 376px;
+    }
+  }
 }

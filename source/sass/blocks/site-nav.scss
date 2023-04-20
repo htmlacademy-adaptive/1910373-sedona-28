@@ -1,10 +1,25 @@
 .site-nav {
+  display: none;
   margin: 0;
   padding: 0;
 
   list-style: none;
 
   background-color: $color-seagull;
+
+  @media (min-width: $vp-768) {
+    display: grid;
+
+    background-color: $color-default-white;
+
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  &__item:nth-child(3) {
+    @media (min-width: $vp-768) {
+      grid-column: 4/5;
+    }
+  }
 
   &__link {
     display: block;
@@ -18,9 +33,35 @@
     color: $color-default-white;
     text-transform: uppercase;
     text-decoration: none;
+
+    @media (min-width: $vp-768) {
+      padding: 18px 20px 17px 20px;
+
+      font-size: 14px;
+      line-height: 21px;
+      color: $color-default-black;
+    }
+
+    &--current {
+      @media (min-width: $vp-768), (min-width: $vp-1200) {
+        color: $color-roman-coffee;
+      }
+    }
   }
 
-  &--hide {
-    display: none;
+  .is-open & {
+    display: block;
+  }
+
+  .no-js & {
+    display: block;
+
+    @media (min-width: $vp-768) {
+      display: grid;
+
+      background-color: $color-default-white;
+
+      grid-template-columns: repeat(5, 1fr);
+    }
   }
 }

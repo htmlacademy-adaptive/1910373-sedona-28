@@ -4,8 +4,23 @@
 
   list-style: none;
 
+  @media (min-width: $vp-768) {
+    display: grid;
+    padding: 0;
+
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   &__item {
-    padding: 0 8px 49px 8px;
+    padding: 0 13px 49px 13px;
+
+    @media (min-width: $vp-768) {
+      padding: 41px 33px 51px 33px;
+    }
+
+    @media (min-width: $vp-1200) {
+      padding: 52px 50px;
+    }
   }
 
   &__title {
@@ -16,6 +31,13 @@
     line-height: 26px;
     text-align: center;
     text-transform: uppercase;
+
+    @media (min-width: $vp-768) {
+      max-width: 159px;
+      margin: 0 auto 11px auto;
+
+      font-size: 21px;
+    }
   }
 
   &__description {

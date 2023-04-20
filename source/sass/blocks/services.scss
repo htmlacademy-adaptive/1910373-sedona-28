@@ -1,11 +1,23 @@
 .services {
   margin: 0;
-  padding: 18px 23px 46px 23px;
+  padding: 23px 18px 46px 18px;
 
   list-style: none;
 
+  @media (min-width: $vp-768) {
+    padding: 0;
+  }
+
   &__item {
     padding: 0 0 0 47px;
+
+    @media (min-width: $vp-768) {
+      padding: 158px 33px 60px 33px;
+    }
+
+    @media (min-width: $vp-1200) {
+      padding: 169px 50px 69px 50px;
+    }
   }
 
   &__title {
@@ -17,9 +29,15 @@
     line-height: 26px;
     text-align: left;
     text-transform: uppercase;
+
+    @media (min-width: $vp-768) {
+      text-align: center;
+    }
   }
 
   &__description {
+    margin: 0;
+
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -27,5 +45,9 @@
     text-align: left;
     color: $color-night-rider;
     text-transform: uppercase;
+
+    @media (min-width: $vp-768) {
+      text-align: center;
+    }
   }
 }

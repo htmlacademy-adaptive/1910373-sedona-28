@@ -1,3 +1,11 @@
 .container {
   padding: 37px 20px 43px 20px;
+
+  @media (min-width: $vp-768) {
+    padding: 66px 60px 58px 60px;
+  }
+
+  @media (min-width: $vp-1200) {
+    padding: 0;
+  }
 }

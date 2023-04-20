@@ -24,4 +24,15 @@
 .heading__title-big-font {
   font-size: 21px;
   line-height: 26px;
+
+  @media (min-width: $vp-768) {
+    font-size: 30px;
+    padding: 0;
+  }
+}
+
+.heading__title--large-font {
+  @media (min-width: $vp-768) {
+    font-size: 30px;
+  }
 }
