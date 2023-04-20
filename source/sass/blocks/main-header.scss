@@ -9,6 +9,10 @@
 
     width: 100%;
 
+    .no-js & {
+      position: static;
+    }
+
     @media (min-width: $vp-768) {
       position: static;
     }
@@ -24,6 +28,14 @@
     height: 96px;
 
     transform: translate(-50%);
+
+    .no-js & {
+      z-index: -1;
+
+      @media (min-width: $vp-768), (min-width: $vp-1200) {
+        z-index: 1;
+      }
+    }
   }
 
   &__logo-image {

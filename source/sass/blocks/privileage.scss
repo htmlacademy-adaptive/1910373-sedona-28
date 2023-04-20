@@ -33,6 +33,9 @@
     text-transform: uppercase;
 
     @media (min-width: $vp-768) {
+      max-width: 159px;
+      margin: 0 auto 11px auto;
+
       font-size: 21px;
     }
   }

@@ -51,6 +51,9 @@
   text-transform: uppercase;
 
   @media (min-width: $vp-768) {
+    max-width: 216px;
+    margin: 0 auto 11px auto;
+
     font-size: 21px;
     line-height: 26px;
   }
@@ -83,4 +86,12 @@
 
 .advantages-content__post--blue-background {
   background-color: $color-seagull;
+
+  &:nth-child(1) {
+    clip-path: polygon(50% 3%, 100% 0, 100% 100%, 0 100%, 0 0);
+
+    @media (min-width: $vp-768) {
+      clip-path: none;
+    }
+  }
 }
