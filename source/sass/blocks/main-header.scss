@@ -22,6 +22,7 @@
     position: absolute;
     top: 0;
     left: 50%;
+    z-index: 11;
 
     display: block;
     width: 185px;
@@ -33,7 +34,7 @@
       z-index: -1;
 
       @media (min-width: $vp-768), (min-width: $vp-1200) {
-        z-index: 1;
+        z-index: 16;
       }
     }
   }
@@ -50,6 +51,7 @@
 
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     background-color: $color-default-white;
     border: none;
@@ -64,6 +66,15 @@
     @media (min-width: $vp-768) {
       display: none;
     }
+
+    &--close {
+      width: 23px;
+      height: 22px;
+
+      background-color: $color-transparent;
+      background-image: url("../img/svg/icon-cross.svg");
+      background-repeat: no-repeat;
+    }
   }
 
   &__toggle-line {
@@ -73,4 +84,16 @@
 
     background-color: $color-seagull;
   }
+}
+
+.is-open .main-header__toggle {
+  z-index: 12;
+}
+
+.is-open .main-header__toggle-line {
+  display: none;
+}
+
+.is-open .main-header__logo {
+  display: none;
 }
