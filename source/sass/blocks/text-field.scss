@@ -29,6 +29,22 @@
     &::placeholder {
       color: rgba($color-default-black, 0.3);
     }
+
+    &--tel {
+      padding: 16px 74px 16px 16px;
+
+      background-image: url("../img/png/phone-icon.png");
+      background-repeat: no-repeat;
+      background-position: right;
+    }
+
+    &--mail {
+      padding: 16px 74px 16px 16px;
+
+      background-image: url("../img/png/mail-icon.png");
+      background-repeat: no-repeat;
+      background-position: right;
+    }
   }
 
   &__input--resize-non {

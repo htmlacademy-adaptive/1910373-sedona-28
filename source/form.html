@@ -10,7 +10,8 @@
 
 <body class="page__body">
   <div class="page__wrapper">
-    <header class="main-header no-js">
+    <!-- добавить класс no-js -->
+    <header class="main-header">
       <button class="main-header__toggle" type="button">
         <span class="visually-hidden">Открыть/закрыть меню навигации.</span>
         <span class="main-header__toggle-line"></span>
@@ -45,7 +46,7 @@
         <img class="greetings__image" src="./img/content/sedona-section-form.svg" alt="Добро пожаловать в Седону."
           width="229" height="39">
       </section>
-      <section class="feedback feedback__wrapper">
+      <section class="feedback">
         <div class="feedback__heading heading">
           <h2 class="heading__title heading__title--large-font">Оставьте свой отзыв</h2>
           <p class="heading__description">Помогите нашим отелям стать лучше! оставьте отзыв о&nbsp;них, а
@@ -53,7 +54,7 @@
         </div>
         <form class="feedback__form form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="form__fieldset">
-            <legend class="form__title">Представьтесь:</legend>
+            <h3 class="form__title">Представьтесь:</h3>
             <label class="form__field text-field">
               <span class="text-field__title">Имя*:</span>
               <input class="text-field__input" name="user-name" type="text" placeholder="Имя" value="Пётр" required>
@@ -70,7 +71,7 @@
             </label>
           </fieldset>
           <fieldset class="form__fieldset">
-            <legend class="form__title">Контактная информация:</legend>
+            <h3 class="form__title">Контактная информация:</h3>
             <label class="form__field text-field">
               <span class="text-field__title">Контактный телефон*:</span>
               <input class="text-field__input text-field__input--tel" name="user-phone" type="tel"
@@ -83,7 +84,7 @@
             </label>
           </fieldset>
           <fieldset class="form__fieldset">
-            <legend class="form__title">Ваше общее впечатление:</legend>
+            <h3 class="form__title">Ваше общее впечатление:</h3>
             <ul class="form__rating-list">
               <li class="form__rating-item">
                 <label class="form__label custom-field">
@@ -111,7 +112,7 @@
             </ul>
           </fieldset>
           <fieldset class="form__fieldset">
-            <legend class="form__title">посещенные достопримечательности:</legend>
+            <h3 class="form__title">посещенные достопримечательности:</h3>
             <ul class="form__attraction-list">
               <li class="form__attraction-item">
                 <label class="form__label custom-field">
@@ -148,7 +149,7 @@
             </ul>
           </fieldset>
           <fieldset class="form__fieldset">
-            <legend class="form__title">Опишите свои эмоции:</legend>
+            <h3 class="form__title">Опишите свои эмоции:</h3>
             <label class="form__label text-field">
               <span class="visually-hidden">Опишите подробно все свои восторги.</span>
               <textarea class="text-field__input text-field__input--resize-non" name="feedback-textarea" cols="30"

@@ -1,17 +1,5 @@
-.feedback__wrapper {
-  padding: 36px 20px 22px 20px;
-
-  @media (min-width: $vp-768) {
-    padding: 64px 60px 64px 60px;
-  }
-
-  @media (min-width: $vp-1200) {
-    padding: 115px 120px 64px 120px;
-  }
-}
-
 .feedback__heading {
-  margin: 0 0 53px 0;
+  padding: 36px 20px 53px 20px;
 
   .heading__title {
     margin-bottom: 24px;
@@ -26,12 +14,10 @@
   }
 
   @media (min-width: $vp-768) {
-    margin: 0 0 108px 0;
-    padding: 0 106px;
+    padding: 100px 166px 108px 166px;
   }
 
   @media (min-width: $vp-1200) {
-    margin: 0 0 68px 0;
-    padding: 0 262px;
+    padding: 115px 382px 68px 382px;
   }
 }

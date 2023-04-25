@@ -25,7 +25,41 @@
   }
 
   &__item {
+    position: relative;
+
     margin: 0 0 50px 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -24px;
+      left: -20px;
+
+      width: 100vw;
+      height: 1px;
+
+      background-color: $color-whisper3;
+
+      @media (min-width: $vp-768) {
+        display: none;
+      }
+    }
+
+    &:last-child::after {
+      content: "";
+      position: absolute;
+      bottom: -25px;
+      left: -20px;
+
+      width: 100vw;
+      height: 1px;
+
+      background-color: $color-whisper3;
+
+      @media (min-width: $vp-768) {
+        display: none;
+      }
+    }
 
     @media (min-width: $vp-768) {
       margin: 0;
@@ -43,15 +77,23 @@
   &__post {
     margin: 0;
 
-    @media (min-width: $vp-1200) {
+    @media (min-width: $vp-768) {
       position: relative;
 
       display: flex;
       height: 100%;
+      padding-top: 267px;
+    }
+
+    @media (min-width: $vp-1200) {
       padding-top: 187px;
     }
 
     &--paddings {
+      @media (min-width: $vp-768) {
+        padding-top: 400px;
+      }
+
       @media (min-width: $vp-1200) {
         padding-top: 327px;
       }
@@ -91,7 +133,7 @@
   &__link {
     display: block;
 
-    @media (min-width: $vp-1200) {
+    @media (min-width: $vp-768), (min-width: $vp-1200) {
       position: absolute;
       top: 0;
       left: 0;
@@ -113,15 +155,47 @@
     }
   }
 
+  &__likes-wrapper {
+    display: inline-flex;
+    align-self: start;
+
+    gap: 14px;
+  }
+
+  &__button {
+    width: 23px;
+    height: 21px;
+    padding: 0;
+
+    background-color: $color-transparent;
+    border: none;
+    cursor: pointer;
+
+    @media (min-width: $vp-768) {
+      margin-top: 6px;
+    }
+  }
+
+  &__icon {
+    fill: rgba($color-default-black, 0.3);
+
+    @media (min-width: $vp-1200) {
+      fill: $color-default-white;
+    }
+  }
+
   &__counter {
-    align-items: center;
-    padding: 0 0 0 37px;
+    margin-top: 4px;
 
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 21px;
     text-transform: uppercase;
+
+    @media (min-width: $vp-768) {
+      margin-top: 9px;
+    }
 
     @media (min-width: $vp-1200) {
       color: $color-default-white;
@@ -132,9 +206,22 @@
     padding: 15px 0 0 0;
 
     @media (min-width: $vp-768) {
+      z-index: 1;
+
       display: flex;
+      flex-grow: 1;
       justify-content: space-between;
       padding: 22px 20px 15px 20px;
+    }
+
+    &--background-darken {
+      @media (min-width: $vp-768) {
+        background-color: $color-whisper2;
+      }
+
+      @media (min-width: $vp-1200) {
+        background-color: rgba($color-default-black, 0.3);
+      }
     }
 
     &--background {
