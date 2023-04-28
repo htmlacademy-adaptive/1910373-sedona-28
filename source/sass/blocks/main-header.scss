@@ -48,6 +48,11 @@
   opacity: 0.6;
 }
 
+.main-header__logo:focus-visible {
+  outline: 2px solid $color-roman-coffee;
+  opacity: 0.9;
+}
+
 .main-header__logo-image {
   display: block;
 }

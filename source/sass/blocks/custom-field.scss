@@ -1,3 +1,7 @@
+.custom-field {
+  cursor: pointer;
+}
+
 .custom-field__text {
   display: inline-flex;
   align-items: center;
@@ -51,4 +55,29 @@
   background-image: url("../img/svg/check-mark.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.custom-field:hover .custom-field__input-icon {
+  background-color: $color-whisper3;
+}
+
+.custom-field:active .custom-field__input-icon {
+  background-color: $color-light-gray;
+}
+
+.custom-field:active .custom-field__input-icon::before {
+  opacity: 0.3;
+}
+
+.custom-field__input:focus-visible + .custom-field__input-icon {
+  outline: 4px solid $color-seagull;
+  outline-offset: 2px;
+}
+
+.custom-field[disabled] {
+  outline: none;
+  cursor: not-allowed;
+  opacity: 0.3;
+
+  pointer-events: none;
 }

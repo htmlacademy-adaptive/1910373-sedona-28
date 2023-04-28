@@ -4,9 +4,9 @@
   padding: 38px 18px 49px 18px;
 
   @media (min-width: $vp-768) {
-    padding: 60px 155px 50px 155px;
-    margin: 0;
     max-width: 100%;
+    margin: 0;
+    padding: 60px 155px 50px 155px;
   }
 
   @media (min-width: $vp-1200) {
@@ -20,4 +20,12 @@
   @media (min-width: $vp-768) {
     margin: 0 0 44px 0;
   }
+}
+
+.search-hotels__button:not([href]) {
+  color: $color-default-white;
+
+  background-color: $color-whisper3;
+
+  pointer-events: none;
 }
