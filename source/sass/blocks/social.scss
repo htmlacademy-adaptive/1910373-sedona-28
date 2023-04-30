@@ -13,25 +13,25 @@
   height: 48px;
 
   background-color: $color-seagull;
+
+  &:hover {
+    background-color: $color-shakespeare;
+  }
+
+  &:active {
+    background-color: $color-shakespeare2;
+  }
+
+  &:active .social-logo {
+    fill: rgba($color-default-white, 0.3);
+  }
+
+  &:focus-visible {
+    background-color: $color-air-force-blue;
+    outline: none;
+  }
 }
 
 .social-logo {
   fill: $color-default-white;
-}
-
-.social__link:hover {
-  background-color: $color-shakespeare;
-}
-
-.social__link:active {
-  background-color: $color-shakespeare2;
-}
-
-.social__link:active .social-logo {
-  fill: rgba($color-default-white, 0.3);
-}
-
-.social__link:focus-visible {
-  background-color: $color-air-force-blue;
-  outline: none;
 }

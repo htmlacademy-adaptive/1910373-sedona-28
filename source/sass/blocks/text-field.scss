@@ -53,31 +53,31 @@
     background-repeat: no-repeat;
     background-position: right;
   }
-}
 
-.text-field__input:hover {
-  background-color: $color-whisper3;
-}
+  &:hover {
+    background-color: $color-whisper3;
+  }
 
-.text-field__input:active {
-  background-color: $color-default-white;
-  border: none;
-  outline: none;
-  box-shadow: inset 4px 4px 0 0 $color-whisper3, inset -4px -4px 0 0 $color-whisper3;
-}
+  &:active {
+    background-color: $color-default-white;
+    border: none;
+    outline: none;
+    box-shadow: inset 4px 4px 0 0 $color-whisper3, inset -4px -4px 0 0 $color-whisper3;
+  }
 
-.text-field__input:focus-visible {
-  background-color: $color-default-white;
-  border: none;
-  outline: none;
-  box-shadow: inset 4px 4px 0 0 $color-whisper3, inset -4px -4px 0 0 $color-whisper3;
-}
+  &:focus-visible {
+    background-color: $color-default-white;
+    border: none;
+    outline: none;
+    box-shadow: inset 4px 4px 0 0 $color-whisper3, inset -4px -4px 0 0 $color-whisper3;
+  }
 
 
-.text-field__input:disabled {
-  background-color: $color-whisper3;
-  cursor: not-allowed;
-  opacity: 0.3;
+  &:disabled {
+    background-color: $color-whisper3;
+    cursor: not-allowed;
+    opacity: 0.3;
 
-  pointer-events: none;
+    pointer-events: none;
+  }
 }

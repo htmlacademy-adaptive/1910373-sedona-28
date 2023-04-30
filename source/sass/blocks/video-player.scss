@@ -20,20 +20,19 @@
   transform: translate(-50%, -50%);
 
   clip-path: polygon(100% 50%, 0 0, 0 100%);
-}
 
-.video-player__control:hover {
-  background-color: rgba($color-default-white, 1);
-}
+  &:hover {
+    background-color: rgba($color-default-white, 1);
+  }
 
-.video-player__control:active {
-  background-color: rgba($color-default-white, 0.6);
-}
+  &:active {
+    background-color: rgba($color-default-white, 0.6);
+  }
 
-.video-player__control:focus-visible {
+  &:focus-visible {
+    width: 68px;
+    height: 74px;
 
-
-  background-color: rgba($color-default-white, 1);
-  width: 68px;
-  height: 74px;
+    background-color: rgba($color-default-white, 1);
+  }
 }

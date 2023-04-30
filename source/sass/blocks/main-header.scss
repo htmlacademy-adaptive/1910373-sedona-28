@@ -136,3 +136,140 @@
     display: block;
   }
 }
+
+.main-header__list {
+  position: absolute;
+  z-index: 10;
+
+  display: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  background-color: $color-seagull;
+
+  @media (min-width: $vp-768) {
+    display: grid;
+
+    background-color: $color-default-white;
+
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .is-open & {
+    display: grid;
+
+    gap: 1px;
+  }
+
+  .no-js & {
+    position: relative;
+
+    display: block;
+
+    @media (min-width: $vp-768) {
+      display: grid;
+
+      background-color: $color-default-white;
+
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+}
+
+.main-header__item:last-child::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 7px;
+
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+
+  @media (min-width: $vp-768), (min-width: $vp-1200) {
+    background: none;
+  }
+}
+
+.main-header__item:not(:first-child) {
+  box-shadow: 0 -1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.main-header__item:nth-child(4n-1) {
+  @media (min-width: $vp-768) {
+    grid-column: 4/5;
+  }
+}
+
+.main-header__link {
+  display: block;
+  padding: 17px 60px 12px 60px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: $color-default-white;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  @media (min-width: $vp-768) {
+    padding: 18px 20px 17px 20px;
+
+    font-size: 14px;
+    line-height: 21px;
+    color: $color-default-black;
+
+    background-color: $color-default-white;
+  }
+
+  &--current {
+    pointer-events: none;
+
+    @media (min-width: $vp-768), (min-width: $vp-1200) {
+      color: $color-roman-coffee;
+
+      pointer-events: none;
+    }
+  }
+
+  &:hover {
+    background-color: $color-shakespeare;
+
+    @media (min-width: $vp-768), (min-width: $vp-1200) {
+      color: $color-seagull;
+
+      background-color: $color-transparent;
+    }
+  }
+
+  &:active {
+    color: rgba($color-default-white, 0.3);
+
+    background-color: $color-shakespeare2;
+
+    @media (min-width: $vp-768), (min-width: $vp-1200) {
+      color: $color-default-black;
+
+      background-color: $color-transparent;
+      opacity: 0.3;
+    }
+  }
+
+  &:focus-visible {
+    background-color: $color-air-force-blue;
+    border: none;
+    outline: none;
+
+    @media (min-width: $vp-768), (min-width: $vp-1200) {
+      background-color: $color-transparent;
+      outline: 3px solid $color-shakespeare2;
+      outline-offset: -3px;
+    }
+  }
+}

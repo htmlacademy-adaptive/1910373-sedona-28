@@ -57,35 +57,35 @@
 
     gap: 12px;
   }
+
+  &:hover .main-footer__copyright-text,
+  &:hover .main-footer__copyright-logo {
+    color: $color-seagull;
+
+    fill: $color-seagull;
+  }
+
+  &:active .main-footer__copyright-text,
+  &:active .main-footer__copyright-logo {
+    color: $color-pink-swan;
+
+    fill: $color-pink-swan;
+  }
+
+  &:focus-visible .main-footer__copyright-text,
+  &:focus-visible .main-footer__copyright-logo,
+  &:focus-visible {
+    color: $color-air-force-blue;
+
+    border: none;
+    outline: none;
+
+    fill: $color-air-force-blue;
+  }
 }
 
 .main-footer__copyright-logo {
   fill: $color-default-black;
-}
-
-.main-footer__copyright:hover .main-footer__copyright-text,
-.main-footer__copyright:hover .main-footer__copyright-logo {
-  color: $color-seagull;
-
-  fill: $color-seagull;
-}
-
-.main-footer__copyright:active .main-footer__copyright-text,
-.main-footer__copyright:active .main-footer__copyright-logo {
-  color: $color-pink-swan;
-
-  fill: $color-pink-swan;
-}
-
-.main-footer__copyright:focus-visible .main-footer__copyright-text,
-.main-footer__copyright:focus-visible .main-footer__copyright-logo,
-.main-footer__copyright:focus-visible {
-  color: $color-air-force-blue;
-
-  border: none;
-  outline: none;
-
-  fill: $color-air-force-blue;
 }
 
 .main-footer__copyright-text {

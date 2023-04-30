@@ -68,28 +68,28 @@
       font-size: 21px;
     }
   }
-}
 
-.button:hover {
-  background-color: $color-shakespeare;
-}
+  &:hover {
+    background-color: $color-shakespeare;
+  }
 
-.button:active {
-  color: rgba($color-default-white, 0.3);
+  &:active {
+    color: rgba($color-default-white, 0.3);
 
-  background-color: $color-shakespeare2;
-}
+    background-color: $color-shakespeare2;
+  }
 
-.button:focus-visible {
-  background-color: $color-air-force-blue;
-  border: none;
-  outline: none;
-}
+  &:focus-visible {
+    background-color: $color-air-force-blue;
+    border: none;
+    outline: none;
+  }
 
-.button:disabled {
-  color: $color-default-white;
+  &:disabled {
+    color: $color-default-white;
 
-  background-color: $color-whisper3;
+    background-color: $color-whisper3;
 
-  pointer-events: none;
+    pointer-events: none;
+  }
 }
