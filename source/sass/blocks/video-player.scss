@@ -1,22 +1,38 @@
 .video-player {
   position: relative;
-  &__image {
-    display: block;
-    width: 100%;
+}
+
+.video-player__image {
+  display: block;
+  width: 100%;
+}
+
+.video-player__control {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  display: block;
+  width: 48px;
+  height: 54px;
+
+  background-color: rgba($color-default-white, 0.7);
+  transform: translate(-50%, -50%);
+
+  clip-path: polygon(100% 50%, 0 0, 0 100%);
+
+  &:hover {
+    background-color: rgba($color-default-white, 1);
   }
 
-  &__control {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+  &:active {
+    background-color: rgba($color-default-white, 0.6);
+  }
 
-    display: block;
-    width: 48px;
-    height: 54px;
+  &:focus-visible {
+    width: 68px;
+    height: 74px;
 
-    background-color: rgba($color-default-white, 0.7);
-    transform: translate(-50%, -50%);
-
-    clip-path: polygon(100% 50%, 0 0, 0 100%);
+    background-color: rgba($color-default-white, 1);
   }
 }

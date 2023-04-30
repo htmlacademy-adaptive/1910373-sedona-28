@@ -11,63 +11,92 @@
     align-items: center;
     padding: 36px 60px;
   }
+}
 
-  &__hashtag {
-    display: block;
+.main-footer__hashtag {
+  display: block;
 
-    font-style: normal;
-    font-weight: 700;
-    font-size: 21px;
-    line-height: 26px;
-    text-align: center;
-    text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main-footer__social {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 6px;
+
+  @media (min-width: $vp-768) {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.main-footer__copyright-wrapper {
+  padding: 0 14px;
+
+  @media (min-width: $vp-768) {
+    padding: 0;
+  }
+}
+
+.main-footer__copyright {
+  display: flex;
+
+  text-decoration: none;
+
+  gap: 11px;
+
+  @media (min-width: $vp-768) {
+    padding: 0;
+
+    gap: 12px;
   }
 
-  &__social {
-    display: flex;
-    flex-wrap: wrap;
+  &:hover .main-footer__copyright-text,
+  &:hover .main-footer__copyright-logo {
+    color: $color-seagull;
 
-    gap: 6px;
-
-    @media (min-width: $vp-768) {
-      display: grid;
-
-      grid-template-columns: repeat(3, 1fr);
-    }
+    fill: $color-seagull;
   }
 
-  &__copyright-wrapper {
-    padding: 0 14px;
+  &:active .main-footer__copyright-text,
+  &:active .main-footer__copyright-logo {
+    color: $color-pink-swan;
 
-    @media (min-width: $vp-768) {
-      padding: 0;
-    }
+    fill: $color-pink-swan;
   }
 
-  &__copyright {
-    display: flex;
+  &:focus-visible .main-footer__copyright-text,
+  &:focus-visible .main-footer__copyright-logo,
+  &:focus-visible {
+    color: $color-air-force-blue;
 
-    text-decoration: none;
+    border: none;
+    outline: none;
 
-    gap: 11px;
-
-    @media (min-width: $vp-768) {
-      padding: 0;
-
-      gap: 12px;
-    }
+    fill: $color-air-force-blue;
   }
+}
 
-  &__copyright-text {
-    display: inline-flex;
-    align-items: center;
+.main-footer__copyright-logo {
+  fill: $color-default-black;
+}
 
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    text-align: center;
-    color: $color-default-black;
-    text-transform: uppercase;
-  }
+.main-footer__copyright-text {
+  display: inline-flex;
+  align-items: center;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: $color-default-black;
+  text-transform: uppercase;
 }

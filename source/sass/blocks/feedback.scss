@@ -1,23 +1,23 @@
 .feedback__heading {
   padding: 36px 20px 53px 20px;
 
-  .heading__title {
-    margin-bottom: 24px;
-
-    @media (min-width: $vp-768) {
-      margin-bottom: 20px;
-    }
-
-    @media (min-width: $vp-1200) {
-      margin-bottom: 31px;
-    }
-  }
-
   @media (min-width: $vp-768) {
     padding: 100px 166px 108px 166px;
   }
 
   @media (min-width: $vp-1200) {
     padding: 115px 382px 68px 382px;
+  }
+}
+
+.feedback__heading .heading__title {
+  margin-bottom: 24px;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $vp-1200) {
+    margin-bottom: 31px;
   }
 }

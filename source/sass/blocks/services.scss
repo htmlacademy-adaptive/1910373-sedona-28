@@ -7,148 +7,156 @@
   @media (min-width: $vp-768) {
     padding: 0;
   }
+}
 
-  &__item {
-    position: relative;
+.services__item {
+  position: relative;
 
-    padding: 0 0 0 47px;
+  padding: 0 0 0 47px;
+
+  @media (min-width: $vp-768) {
+    padding: 158px 37px 60px 37px;
+  }
+
+  @media (min-width: $vp-1200) {
+    padding: 169px 50px 69px 50px;
+  }
+
+  &--home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 40px;
+    height: 40px;
+
+    background-image: url("../img/svg/icon-house.svg");
+    background-repeat: no-repeat;
 
     @media (min-width: $vp-768) {
-      padding: 158px 33px 60px 33px;
+      top: 60px;
+      left: 50%;
+
+      width: 77px;
+      height: 72px;
+
+      background-size: 77px 72px;
+      transform: translate(-50%);
     }
 
     @media (min-width: $vp-1200) {
-      padding: 169px 50px 69px 50px;
-    }
+      top: 69px;
 
-    &--home::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
+      width: 79px;
+      height: 72px;
 
-      width: 40px;
-      height: 40px;
-
-      background-image: url("../img/svg/icon-house.svg");
-      background-repeat: no-repeat;
-
-      @media (min-width: $vp-768) {
-        top: 60px;
-        left: 50%;
-
-        width: 77px;
-        height: 72px;
-
-        background-size: 77px 72px;
-        transform: translate(-50%);
-      }
-
-      @media (min-width: $vp-1200) {
-        top: 69px;
-
-        width: 79px;
-        height: 72px;
-
-        background-size: 79px 72px;
-      }
-    }
-
-    &--food::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-
-      width: 40px;
-      height: 40px;
-
-      background-image: url("../img/svg/icon-burger.svg");
-      background-repeat: no-repeat;
-
-      @media (min-width: $vp-768) {
-        top: 62px;
-        left: 50%;
-
-        width: 80px;
-        height: 68px;
-
-        background-size: 80px 68px;
-        transform: translate(-50%);
-      }
-
-      @media (min-width: $vp-1200) {
-        top: 69px;
-
-        width: 72px;
-        height: 69px;
-
-        background-size: 73px 69px;
-      }
-    }
-
-    &--souvenirs::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-
-      width: 40px;
-      height: 40px;
-
-      background-image: url("../img/svg/icon-gift.svg");
-      background-repeat: no-repeat;
-
-      @media (min-width: $vp-768) {
-        top: 64px;
-        left: 50%;
-
-        width: 66px;
-        height: 75px;
-
-        background-size: 66px 75px;
-        transform: translate(-50%);
-      }
-
-      @media (min-width: $vp-1200) {
-        top: 69px;
-
-        width: 77px;
-        height: 75px;
-
-        background-size: 77px 75px;
-      }
+      background-size: 79px 72px;
     }
   }
 
-  &__title {
-    margin: 0 0 16px 0;
+  &--food::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
 
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 26px;
-    text-align: left;
-    text-transform: uppercase;
+    width: 40px;
+    height: 40px;
+
+    background-image: url("../img/svg/icon-burger.svg");
+    background-repeat: no-repeat;
 
     @media (min-width: $vp-768) {
-      text-align: center;
+      top: 62px;
+      left: 50%;
+
+      width: 80px;
+      height: 68px;
+
+      background-size: 80px 68px;
+      transform: translate(-50%);
+    }
+
+    @media (min-width: $vp-1200) {
+      top: 69px;
+
+      width: 73px;
+      height: 69px;
+
+      background-size: 73px 69px;
     }
   }
 
-  &__description {
+  &--souvenirs::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 40px;
+    height: 40px;
+
+    background-image: url("../img/svg/icon-gift.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $vp-768) {
+      top: 64px;
+      left: 50%;
+
+      width: 66px;
+      height: 75px;
+
+      background-size: 66px 75px;
+      transform: translate(-50%);
+    }
+
+    @media (min-width: $vp-1200) {
+      top: 69px;
+
+      width: 77px;
+      height: 75px;
+
+      background-size: 77px 75px;
+    }
+  }
+}
+
+.services__item:not(:last-child) {
+  margin-bottom: 25px;
+
+  @media (min-width: $vp-768) {
     margin: 0;
+  }
+}
 
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    text-align: left;
-    color: $color-night-rider;
-    text-transform: uppercase;
+.services__title {
+  margin: 0 0 16px 0;
 
-    @media (min-width: $vp-768) {
-      text-align: center;
-    }
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: left;
+  text-transform: uppercase;
+
+  @media (min-width: $vp-768) {
+    text-align: center;
+  }
+}
+
+.services__description {
+  margin: 0;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: left;
+  color: $color-night-rider;
+  text-transform: uppercase;
+
+  @media (min-width: $vp-768) {
+    text-align: center;
   }
 }
