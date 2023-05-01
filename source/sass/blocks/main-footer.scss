@@ -61,15 +61,11 @@
   &:hover .main-footer__copyright-text,
   &:hover .main-footer__copyright-logo {
     color: $color-seagull;
-
-    fill: $color-seagull;
   }
 
   &:active .main-footer__copyright-text,
   &:active .main-footer__copyright-logo {
     color: $color-pink-swan;
-
-    fill: $color-pink-swan;
   }
 
   &:focus-visible .main-footer__copyright-text,
@@ -79,13 +75,15 @@
 
     border: none;
     outline: none;
-
-    fill: $color-air-force-blue;
   }
 }
 
 .main-footer__copyright-logo {
-  fill: $color-default-black;
+  color: $color-default-black;
+
+  background-repeat: no-repeat;
+
+  mask-image: url("../img/sprite.svg#copyright-icon");
 }
 
 .main-footer__copyright-text {

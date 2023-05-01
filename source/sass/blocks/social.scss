@@ -22,8 +22,8 @@
     background-color: $color-shakespeare2;
   }
 
-  &:active .social-logo {
-    fill: rgba($color-default-white, 0.3);
+  &:active .social__icons {
+    opacity: 0.3;
   }
 
   &:focus-visible {
@@ -32,6 +32,22 @@
   }
 }
 
-.social-logo {
-  fill: $color-default-white;
+.social__icons {
+  &--vk {
+    background-repeat: no-repeat;
+
+    mask-image: url("../img/sprite.svg#vk-icon");
+  }
+
+  &--telegram {
+    background-repeat: no-repeat;
+
+    mask-image: url("../img/sprite.svg#telegram-icon");
+  }
+
+  &--youtube {
+    background-repeat: no-repeat;
+
+    mask-image: url("../img/sprite.svg#youtube-icon");
+  }
 }
