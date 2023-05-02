@@ -57,21 +57,21 @@
       grid-column: 1/span 3;
     }
   }
-}
 
-.media-cards__item:last-child::after {
-  content: "";
-  position: absolute;
-  bottom: -25px;
-  left: -20px;
+  &:last-child::after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: -20px;
 
-  width: 100vw;
-  height: 1px;
+    width: 100vw;
+    height: 1px;
 
-  background-color: $color-whisper3;
+    background-color: $color-whisper3;
 
-  @media (min-width: $vp-768) {
-    display: none;
+    @media (min-width: $vp-768) {
+      display: none;
+    }
   }
 }
 
@@ -230,8 +230,8 @@
 
   &:focus-visible {
     background-color: $color-air-force-blue;
-    opacity: 1;
     outline: none;
+    opacity: 1;
 
     @media (min-width: $vp-1200) {
       background-color: $color-gorse;
