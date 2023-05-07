@@ -41,17 +41,19 @@
   &--tel {
     padding: 16px 74px 16px 16px;
 
-    background-image: url("../img/png/phone-icon.png");
+    background-image: url("../img/sprite.svg#icon-telephone");
     background-repeat: no-repeat;
     background-position: right;
+    background-size: 58px 58px;
   }
 
   &--mail {
     padding: 16px 74px 16px 16px;
 
-    background-image: url("../img/png/mail-icon.png");
+    background-image: url("../img/sprite.svg#icon-mail");
     background-repeat: no-repeat;
     background-position: right;
+    background-size: 58px 58px;
   }
 
   &:hover {

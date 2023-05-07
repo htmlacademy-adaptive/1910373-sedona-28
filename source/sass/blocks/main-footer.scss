@@ -15,6 +15,7 @@
 
 .main-footer__hashtag {
   display: block;
+  align-self: start;
 
   font-style: normal;
   font-weight: 700;
@@ -27,6 +28,11 @@
 .main-footer__social {
   display: flex;
   flex-wrap: wrap;
+  align-self: start;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 
   gap: 6px;
 
@@ -37,7 +43,76 @@
   }
 }
 
+.main-footer__link {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+
+  background-color: $color-seagull;
+
+  &--vk::before {
+    content: "";
+    position: absolute;
+
+    width: 24px;
+    height: 14px;
+
+    background-color: $color-default-white;
+    background-repeat: no-repeat;
+
+    mask-image: url("../img/sprite.svg#vk-icon");
+  }
+
+  &--telegram::before {
+    content: "";
+    position: absolute;
+
+    width: 22px;
+    height: 18px;
+
+    background-color: $color-default-white;
+    background-repeat: no-repeat;
+
+    mask-image: url("../img/sprite.svg#telegram-icon");
+  }
+
+  &--youtube::before {
+    content: "";
+    position: absolute;
+
+    width: 20px;
+    height: 14px;
+
+    background-color: $color-default-white;
+    background-repeat: no-repeat;
+
+    mask-image: url("../img/sprite.svg#youtube-icon");
+  }
+
+  &:hover {
+    background-color: $color-shakespeare;
+  }
+
+  &:active {
+    background-color: $color-shakespeare2;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
+
+  &:focus-visible {
+    background-color: $color-air-force-blue;
+    outline: none;
+  }
+}
+
 .main-footer__copyright-wrapper {
+  align-self: start;
   padding: 0 14px;
 
   @media (min-width: $vp-768) {
@@ -61,15 +136,11 @@
   &:hover .main-footer__copyright-text,
   &:hover .main-footer__copyright-logo {
     color: $color-seagull;
-
-    fill: $color-seagull;
   }
 
   &:active .main-footer__copyright-text,
   &:active .main-footer__copyright-logo {
     color: $color-pink-swan;
-
-    fill: $color-pink-swan;
   }
 
   &:focus-visible .main-footer__copyright-text,
@@ -79,13 +150,15 @@
 
     border: none;
     outline: none;
-
-    fill: $color-air-force-blue;
   }
 }
 
 .main-footer__copyright-logo {
-  fill: $color-default-black;
+  color: $color-default-black;
+
+  background-repeat: no-repeat;
+
+  mask-image: url("../img/sprite.svg#copyright-icon");
 }
 
 .main-footer__copyright-text {
