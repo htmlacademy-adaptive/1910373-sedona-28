@@ -263,10 +263,7 @@
 .advantages-content__images {
   display: block;
   width: 100%;
-
-  @media (min-width: $vp-768) {
-    min-height: 256px;
-  }
+  min-height: 100%;
 }
 
 .advantages-content__privileage-list {

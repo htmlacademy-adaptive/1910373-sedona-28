@@ -55,6 +55,7 @@
 
 .main-header__logo-image {
   display: block;
+  height: 96px;
 }
 
 .main-header__toggle {
@@ -151,6 +152,8 @@
   background-color: $color-seagull;
 
   @media (min-width: $vp-768) {
+    position: static;
+
     display: grid;
 
     background-color: $color-default-white;
@@ -197,6 +200,10 @@
 
 .main-header__item:not(:first-child) {
   box-shadow: 0 -1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+
+  @media (min-width: $vp-768) {
+    box-shadow: none;
+  }
 }
 
 .main-header__item:nth-child(4n-1) {
