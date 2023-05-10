@@ -1,1 +1,0 @@
-const burgerBtn=document.querySelector(".main-header__toggle"),mainHeader=document.querySelector(".main-header");burgerBtn.addEventListener("click",(()=>mainHeader.classList.toggle("is-open")));
