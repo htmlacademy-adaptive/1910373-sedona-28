@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon/favicon-svg.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/favicon-apple.png">
@@ -22,7 +22,8 @@
         <span class="main-header__toggle-line"></span>
       </button>
       <a class="main-header__logo" href="index.html">
-        <img class="main-header__logo-image" src="./img/content/logo.svg" alt="Логотип Седоны." width="185" height="96">
+        <img class="main-header__logo-image" src="img/svg/content/logo.svg" alt="Логотип Седоны." width="185"
+          height="96">
       </a>
       <nav class="main-header__nav">
         <ul class="main-header__list">
@@ -45,27 +46,33 @@
     <main class="main-index">
       <h1 class="visually-hidden">Фото и видео городка Седона.</h1>
       <section class="greetings greetings--inner">
-        <h2 class="visually-hidden">Седона - сервис бронирования отелей.</h2>
-        <img class="greetings__image greetings__image--inner" src="./img/content/sedona-section-form.svg"
+        <h2 class="visually-hidden">Седона - сервис бронирования отелей.</h2><img
+          class="greetings__image greetings__image--inner" src="img/svg/content/sedona-section-form.svg"
           alt="Добро пожаловать в Седону." width="229" height="39">
       </section>
       <section class="media-content container">
         <div class="media-content__heading heading">
           <h2 class="heading__title heading__title--large-font">Фото и видео</h2>
-          <p class="heading__description">Не&nbsp;можете решиться на&nbsp;путешествие из-за курса?
-            Фотографии помогут вам забыть о&nbsp;политике и&nbsp;экономике</p>
+          <p class="heading__description">Не&nbsp;можете решиться на&nbsp;путешествие из-за курса? Фотографии помогут
+            вам забыть о&nbsp;политике и&nbsp;экономике</p>
         </div>
         <ul class="media-content__list media-cards">
           <li class="media-cards__item media-cards__item--full">
             <figure class="media-cards__post media-cards__post--paddings">
               <a class="media-cards__link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/media-content/road-desktop.webp, img/media-content/road-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/media-content/road-tablet.webp, img/media-content/road-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/media-content/road-mobile.webp, img/media-content/road-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)"
-                    srcset="./img/media-content/road-desktop.jpg 1x, ./img/media-content/road-desktop@2x.jpg 2x">
+                    srcset="img/media-content/road-desktop.jpg, img/media-content/road-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)"
-                    srcset="./img/media-content/road-tablet.jpg 1x, ./img/media-content/road-tablet@2x.jpg 2x">
-                  <img class="media-cards__image" src="./img/media-content/road-mobile.jpg" width="280" height="280"
-                    srcset="./img/media-content/road-mobile@2x.jpg 2x" alt="Дорога посреди гор.">
+                    srcset="img/media-content/road-tablet.jpg, img/media-content/road-tablet@2x.jpg 2x"><img
+                    class="media-cards__image" src="img/media-content/road-mobile.jpg" width="280" height="280"
+                    srcset="img/media-content/road-mobile@2x.jpg 2x" alt="Дорога посреди гор.">
                 </picture>
               </a>
               <figcaption class="media-cards__specification media-cards__specification--background">
@@ -86,12 +93,18 @@
             <figure class="media-cards__post">
               <a class="media-cards__link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/media-content/vegetation-desktop.webp, img/media-content/vegetation-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/media-content/vegetation-tablet.webp, img/media-content/vegetation-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/media-content/vegetation-mobile.webp, img/media-content/vegetation-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)"
-                    srcset="./img/media-content/vegetation-desktop.jpg 1x, ./img/media-content/vegetation-desktop@2x.jpg 2x">
+                    srcset="img/media-content/vegetation-desktop.jpg, img/media-content/vegetation-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)"
-                    srcset="./img/media-content/vegetation-tablet.jpg 1x, ./img/media-content/vegetation-tablet@2x.jpg 2x">
-                  <img class="media-cards__image" src="./img/media-content/vegetation-mobile.jpg" width="280"
-                    height="280" srcset="./img/media-content/vegetation-mobile@2x.jpg 2x" alt="Кактус на фоне каньона.">
+                    srcset="img/media-content/vegetation-tablet.jpg, img/media-content/vegetation-tablet@2x.jpg 2x">
+                  <img class="media-cards__image" src="img/media-content/vegetation-mobile.jpg" width="280" height="280"
+                    srcset="img/media-content/vegetation-mobile@2x.jpg 2x" alt="Кактус на фоне каньона.">
                 </picture>
               </a>
               <figcaption class="media-cards__specification media-cards__specification--background">
@@ -112,12 +125,18 @@
             <figure class="media-cards__post">
               <a class="media-cards__link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/media-content/road-to-the-north-desktop.webp, img/media-content/road-to-the-north-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/media-content/road-to-the-north-tablet.webp, img/media-content/road-to-the-north-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/media-content/road-to-the-north-mobile.webp, img/media-content/road-to-the-north-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)"
-                    srcset="./img/media-content/road-to-the-north-desktop.jpg 1x, ./img/media-content/road-to-the-north-desktop@2x.jpg 2x">
+                    srcset="img/media-content/road-to-the-north-desktop.jpg, img/media-content/road-to-the-north-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)"
-                    srcset="./img/media-content/road-to-the-north-tablet.jpg 1x, ./img/media-content/road-to-the-north-tablet@2x.jpg 2x">
-                  <img class="media-cards__image" src="./img/media-content/road-to-the-north-mobile.jpg" width="280"
-                    height="280" srcset="./img/media-content/road-to-the-north-mobile@2x.jpg 2x"
+                    srcset="img/media-content/road-to-the-north-tablet.jpg, img/media-content/road-to-the-north-tablet@2x.jpg 2x">
+                  <img class="media-cards__image" src="img/media-content/road-to-the-north-mobile.jpg" width="280"
+                    height="280" srcset="img/media-content/road-to-the-north-mobile@2x.jpg 2x"
                     alt="Серпантин среди хвойной природы.">
                 </picture>
               </a>
@@ -139,12 +158,18 @@
             <figure class="media-cards__post">
               <a class="media-cards__link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/media-content/devil-bridge-catalog-desktop.webp, img/media-content/devil-bridge-catalog-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/media-content/devil-bridge-catalog-tablet.webp, img/media-content/devil-bridge-catalog-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/media-content/devil-bridge-catalog-mobile.webp, img/media-content/devil-bridge-catalog-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)"
-                    srcset="./img/media-content/devil-bridge-catalog-desktop.jpg 1x, ./img/media-content/devil-bridge-catalog-desktop@2x.jpg 2x">
+                    srcset="img/media-content/devil-bridge-catalog-desktop.jpg, img/media-content/devil-bridge-catalog-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)"
-                    srcset="./img/media-content/devil-bridge-catalog-tablet.jpg 1x, ./img/media-content/devil-bridge-catalog-tablet.jpg 2x">
-                  <img class="media-cards__image" src="./img/media-content/devil-bridge-catalog-mobile.jpg" width="280"
-                    height="280" srcset="./img/media-content/devil-bridge-catalog-mobile@2x.jpg 2x"
+                    srcset="img/media-content/devil-bridge-catalog-tablet.jpg, img/media-content/devil-bridge-catalog-tablet.jpg 2x">
+                  <img class="media-cards__image" src="img/media-content/devil-bridge-catalog-mobile.jpg" width="280"
+                    height="280" srcset="img/media-content/devil-bridge-catalog-mobile@2x.jpg 2x"
                     alt="Серпантин среди хвойной природы.">
                 </picture>
               </a>
@@ -172,12 +197,18 @@
         </div>
         <div class="video-player">
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)"
+              srcset="img/video-content/video-desktop.webp, img/video-content/video-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/video-content/video-tablet.webp, img/video-content/video-tablet@2x.webp 2x">
+            <source type="image/webp"
+              srcset="img/video-content/video-mobile.webp, img/video-content/video-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)"
-              srcset="./img/video-content/video-desktop.jpg 1x, ./img/video-content/video-desktop@2x.jpg 2x">
+              srcset="img/video-content/video-desktop.jpg, img/video-content/video-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)"
-              srcset="./img/video-content/video-tablet.jpg 1x, ./img/video-content/video-tablet@2x.jpg 2x">
-            <img class="video-player__image" src="./img/video-content/video-mobile.jpg" width="280" height="177"
-              srcset="./img/video-content/video-mobile@2x.jpg 2x" alt="Видеопрезентация Седоны.">
+              srcset="img/video-content/video-tablet.jpg, img/video-content/video-tablet@2x.jpg 2x">
+              <img class="video-player__image" src="img/video-content/video-mobile.jpg" width="280" height="177"
+              srcset="img/video-content/video-mobile@2x.jpg 2x" alt="Видеопрезентация Седоны.">
           </picture>
           <a class="video-player__control" href="#">
             <span class="visually-hidden">кнопка, запускающая видео</span>
@@ -189,8 +220,8 @@
       <span class="main-footer__hashtag">#visitsedona</span>
       <ul class="main-footer__social">
         <li class="main-footer__item">
-          <a class="main-footer__link main-footer__link--vk" href="#" target="_blank" rel="nofollow noopener">
-            <span class="visually-hidden">Седона в вконтакте.</span>
+          <a class="main-footer__link main-footer__link--vk" href="#" target="_blank" rel="nofollow noopener"><span
+              class="visually-hidden">Седона в вконтакте.</span>
           </a>
         </li>
         <li class="main-footer__item">
@@ -209,7 +240,7 @@
           <span class="main-footer__copyright-text">Разработано</span>
           <span class="visually-hidden">Переход на главную страницу HTML академии.</span>
           <svg class="main-footer__copyright-logo" aria-hidden="true" focusable="false" width="27" height="35">
-            <use xlink:href="img/sprite.svg#copyright-icon"></use>
+            <use xlink:href="img/stack.svg#icon-copyright"></use>
           </svg>
         </a>
       </div>
