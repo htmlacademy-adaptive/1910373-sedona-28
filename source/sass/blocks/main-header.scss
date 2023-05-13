@@ -182,6 +182,13 @@
   }
 }
 
+.main-header__item {
+  @media (min-width: $vp-768) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .main-header__item:last-child::before {
   content: "";
   position: absolute;

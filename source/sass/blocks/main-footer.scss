@@ -29,20 +29,18 @@
 }
 
 .main-footer__social {
-  display: flex;
-  flex-wrap: wrap;
-  align-self: start;
+  display: grid;
+  align-self: center;
   margin: 0;
   padding: 0;
 
   list-style: none;
 
   gap: 6px;
+  grid-template-columns: repeat(3, 1fr);
 
   @media (min-width: $vp-768) {
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
+    align-self: start;
   }
 }
 
@@ -115,10 +113,11 @@
 }
 
 .main-footer__copyright-wrapper {
-  align-self: start;
+  align-self: center;
   padding: 0 14px;
 
   @media (min-width: $vp-768) {
+    align-self: start;
     padding: 0;
   }
 }

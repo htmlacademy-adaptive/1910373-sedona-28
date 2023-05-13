@@ -14,7 +14,7 @@
 
 <body class="page__body">
   <div class="page__wrapper">
-    <header class="main-header">
+    <header class="main-header no-js">
       <button class="main-header__toggle" type="button">
         <span class="visually-hidden">Открыть/закрыть меню навигации.</span>
         <span class="main-header__toggle-line"></span>
@@ -187,25 +187,26 @@
         </li>
       </ul>
       <div class="main-footer__copyright-wrapper">
-        <a class="main-footer__copyright" href="https://htmlacademy.ru/" target="_blank" rel="nofollow noopener">
+        <a class="main-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="nofollow noopener">
           <span class="main-footer__copyright-text">Разработано</span>
-          <span class="visually-hidden">Переход на главную страницу HTML академии.</span>
+          <span class="visually-hidden">Переход на страницу курса адаптивной вёрстки.</span>
           <svg class="main-footer__copyright-logo" aria-hidden="true" focusable="false" width="27" height="35">
             <use xlink:href="img/stack.svg#icon-copyright"></use>
           </svg>
         </a>
       </div>
-    </footer><!-- добавить класс is-open -->
+    </footer><!-- добавить класс open-fail / open-success -->
     <div class="modal">
-      <div class="modal-content modal-content--failure">
-        <h2 class="modal-content__title">Что-то пошло не&nbsp;так!</h2>
-        <p class="modal-content__text">Проверьте поля, выделенные красным, скорее всего вы забыли их&nbsp;заполнить</p>
+      <div class="modal__content modal__content--failure">
+        <h2 class="modal__content-title">Что-то пошло не&nbsp;так!</h2>
+        <p class="modal__content-text">Проверьте поля, выделенные красным, скорее всего вы забыли их&nbsp;заполнить</p>
         <button class="button button--error">Ок</button>
       </div>
-      <div class="modal-content modal-content--success">
-        <h2 class="modal-content__title">Ваш отзыв отправлен!</h2>
-        <p class="modal-content__text">Спасибо за&nbsp;ваше участие, ваш отзыв уже поступил к&nbsp;нам. В&nbsp;ближайшее
-          время мы опубликуем его на&nbsp;сайте.</p><button class="button button--success">Закрыть окно</button>
+      <div class="modal__content modal__content--success">
+        <h2 class="modal__content-title">Ваш отзыв отправлен!</h2>
+        <p class="modal__content-text">Спасибо за&nbsp;ваше участие, ваш<span></span> отзыв уже поступил к&nbsp;нам. В&nbsp;ближайшее
+          время мы<span></span> опубликуем его на&nbsp;сайте.</p>
+          <button class="button button--success">Закрыть окно</button>
       </div>
     </div>
   </div>

@@ -38,10 +38,10 @@
   text-transform: uppercase;
 }
 
-.heading__description br {
-  display: none;
-
+.heading__description span::after {
   @media (min-width: $vp-768) {
-    display: inline;
+    content: "\A";
+
+    white-space: pre;
   }
 }
