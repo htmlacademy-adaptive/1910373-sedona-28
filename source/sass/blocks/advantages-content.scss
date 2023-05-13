@@ -82,7 +82,7 @@
     width: 40px;
     height: 40px;
 
-    background-image: url("../img/sprite.svg#icon-home");
+    background-image: url("../img/stack.svg#icon-home");
     background-repeat: no-repeat;
 
     @media (min-width: $vp-768) {
@@ -115,7 +115,7 @@
     width: 40px;
     height: 40px;
 
-    background-image: url("../img/sprite.svg#icon-burger");
+    background-image: url("../img/stack.svg#icon-burger");
     background-repeat: no-repeat;
 
     @media (min-width: $vp-768) {
@@ -148,7 +148,7 @@
     width: 40px;
     height: 40px;
 
-    background-image: url("../img/sprite.svg#icon-souvenirs");
+    background-image: url("../img/stack.svg#icon-gift");
     background-repeat: no-repeat;
 
     @media (min-width: $vp-768) {
@@ -244,11 +244,11 @@
   text-transform: uppercase;
 }
 
-.advantages-content__description br {
-  display: none;
-
+.advantages-content__description span::after {
   @media (min-width: $vp-1200) {
-    display: inline;
+    content: "\A";
+
+    white-space: pre;
   }
 }
 
@@ -264,6 +264,10 @@
   display: block;
   width: 100%;
   min-height: 100%;
+
+  @media (min-width: $vp-768) {
+    max-height: 256px;
+  }
 }
 
 .advantages-content__privileage-list {
@@ -314,7 +318,8 @@
 }
 
 .advantages-content__privileage-description {
-  margin: 0;
+  max-width: 257px;
+  margin: 0 auto;
 
   font-style: normal;
   font-weight: 400;
@@ -323,6 +328,22 @@
   text-align: center;
   color: $color-night-rider;
   text-transform: uppercase;
+
+  @media (min-width: $vp-1200) {
+    max-width: 300px;
+  }
+}
+
+.advantages-content__privileage-description span::after {
+  @media (min-width: $vp-768) {
+    content: "\A";
+
+    white-space: pre;
+  }
+
+  @media (min-width: ($vp-768 + 18px)) {
+    display: none;
+  }
 }
 
 .advantages-content__privileage-counter {

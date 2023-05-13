@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon/favicon-svg.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/favicon-apple.png">
@@ -14,7 +14,7 @@
 
 <body class="page__body">
   <div class="page__wrapper">
-    <header class="main-header">
+    <header class="main-header no-js">
       <button class="main-header__toggle" type="button">
         <span class="visually-hidden">Открыть/закрыть меню навигации.</span>
         <span class="main-header__toggle-line"></span>
@@ -22,7 +22,7 @@
         <span class="main-header__toggle-line"></span>
       </button>
       <a class="main-header__logo" href="index.html">
-        <img class="main-header__logo-image" src="./img/content/logo.svg" alt="Логотип Седоны." width="185" height="96">
+        <img class="main-header__logo-image" src="img/svg/content/logo.svg" alt="Логотип Седоны." width="185" height="96">
       </a>
       <nav class="main-header__nav">
         <ul class="main-header__list">
@@ -45,15 +45,15 @@
     <main class="main-index">
       <h1 class="visually-hidden">Форма обратной связи посетителей городка Седона.</h1>
       <section class="greetings greetings--inner">
-        <h2 class="visually-hidden">Седона - сервис бронирования отелей.</h2>
-        <img class="greetings__image greetings__image--inner" src="./img/content/sedona-section-form.svg"
+        <h2 class="visually-hidden">Седона - сервис бронирования отелей.</h2><img
+          class="greetings__image greetings__image--inner" src="img/svg/content/sedona-section-form.svg"
           alt="Добро пожаловать в Седону." width="229" height="39">
       </section>
       <section class="feedback">
         <div class="feedback__heading heading">
           <h2 class="heading__title heading__title--large-font">Оставьте свой отзыв</h2>
-          <p class="heading__description">Помогите нашим отелям стать лучше! оставьте отзыв о&nbsp;них, а
-            также о&nbsp;посещенных вами достопримечательностях</p>
+          <p class="heading__description">Помогите нашим отелям стать лучше! оставьте отзыв о&nbsp;них, а также
+            о&nbsp;посещенных вами достопримечательностях</p>
         </div>
         <form class="feedback__form form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="form__fieldset">
@@ -81,7 +81,7 @@
                 placeholder="Введите телефон" required>
             </label>
             <label class="form__field text-field">
-              <span class="text-field__title"> Электронная почта*:</span>
+              <span class="text-field__title">Электронная почта*:</span>
               <input class="text-field__input text-field__input--mail" name="user-mail" type="email"
                 placeholder="Введите e-mail" required>
             </label>
@@ -92,7 +92,7 @@
               <li class="form__rating-item">
                 <label class="form__label custom-field">
                   <input class="custom-field__input visually-hidden" type="radio" name="rating__input" value="positive"
-                    checked>
+                    checked="checked">
                   <span class="custom-field__input-icon custom-field__input-icon--radio"></span>
                   <span class="custom-field__text">Скорее положительное</span>
                 </label>
@@ -120,7 +120,7 @@
               <li class="form__attraction-item">
                 <label class="form__label custom-field">
                   <input class="custom-field__input visually-hidden" type="checkbox" name="attraction"
-                    value="Devil bridge" checked>
+                    value="Devil bridge" checked="checked">
                   <span class="custom-field__input-icon custom-field__input-icon--checkbox"></span>
                   <span class="custom-field__text">Мост Дьявола</span>
                 </label>
@@ -128,7 +128,7 @@
               <li class="form__attraction-item">
                 <label class="form__label custom-field">
                   <input class="custom-field__input visually-hidden" type="checkbox" name="attraction" value="Bell rock"
-                    checked>
+                    checked="checked">
                   <span class="custom-field__input-icon custom-field__input-icon--checkbox"></span>
                   <span class="custom-field__text">Гора-Колокол</span>
                 </label>
@@ -136,7 +136,7 @@
               <li class="form__attraction-item">
                 <label class="form__label custom-field">
                   <input class="custom-field__input visually-hidden" type="checkbox" name="attraction"
-                    value="Slide rock park" checked>
+                    value="Slide rock park" checked="checked">
                   <span class="custom-field__input-icon custom-field__input-icon--checkbox"></span>
                   <span class="custom-field__text">Слайд-парк</span>
                 </label>
@@ -160,7 +160,8 @@
             </label>
           </fieldset>
           <div class="form__button-wrapper">
-            <button class="form__submit-button button" type="submit">Отправить отзыв</button>
+            <button class="form__submit-button button" type="submit">Отправить
+              отзыв</button>
             <span class="form__footnote">* — обязательные поля</span>
           </div>
         </form>
@@ -186,29 +187,26 @@
         </li>
       </ul>
       <div class="main-footer__copyright-wrapper">
-        <a class="main-footer__copyright" href="https://htmlacademy.ru/" target="_blank" rel="nofollow noopener">
+        <a class="main-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="nofollow noopener">
           <span class="main-footer__copyright-text">Разработано</span>
-          <span class="visually-hidden">Переход на главную страницу HTML академии.</span>
+          <span class="visually-hidden">Переход на страницу курса адаптивной вёрстки.</span>
           <svg class="main-footer__copyright-logo" aria-hidden="true" focusable="false" width="27" height="35">
-            <use xlink:href="img/sprite.svg#copyright-icon"></use>
+            <use xlink:href="img/stack.svg#icon-copyright"></use>
           </svg>
         </a>
       </div>
-    </footer>
-    <!-- добавить класс is-open -->
+    </footer><!-- добавить класс open-fail / open-success -->
     <div class="modal">
-      <div class="modal-content modal-content--failure">
-        <h2 class="modal-content__title">Что-то пошло не&nbsp;так!</h2>
-        <p class="modal-content__text">Проверьте поля, выделенные красным, скорее всего вы забыли их&nbsp;заполнить
-        </p>
+      <div class="modal__content modal__content--failure">
+        <h2 class="modal__content-title">Что-то пошло не&nbsp;так!</h2>
+        <p class="modal__content-text">Проверьте поля, выделенные красным, скорее всего вы забыли их&nbsp;заполнить</p>
         <button class="button button--error">Ок</button>
       </div>
-      <div class="modal-content modal-content--success">
-        <h2 class="modal-content__title">Ваш отзыв отправлен!</h2>
-        <p class="modal-content__text">Спасибо за&nbsp;ваше участие, ваш отзыв уже поступил к&nbsp;нам. В&nbsp;ближайшее
-          время
-          мы опубликуем его на&nbsp;сайте.</p>
-        <button class="button button--success">Закрыть окно</button>
+      <div class="modal__content modal__content--success">
+        <h2 class="modal__content-title">Ваш отзыв отправлен!</h2>
+        <p class="modal__content-text">Спасибо за&nbsp;ваше участие, ваш<span></span> отзыв уже поступил к&nbsp;нам. В&nbsp;ближайшее
+          время мы<span></span> опубликуем его на&nbsp;сайте.</p>
+          <button class="button button--success">Закрыть окно</button>
       </div>
     </div>
   </div>

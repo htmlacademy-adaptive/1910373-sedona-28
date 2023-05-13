@@ -5,6 +5,11 @@
 .video-player__image {
   display: block;
   width: 100%;
+  min-height: 100%;
+
+  @media (min-width: $vp-768) {
+    max-height: 500px;
+  }
 }
 
 .video-player__control {

@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon/favicon-svg.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/favicon-apple.png">
@@ -13,9 +13,8 @@
 </head>
 
 <body class="page__body">
-
   <div class="page__wrapper">
-    <header class="main-header">
+    <header class="main-header  no-js">
       <button class="main-header__toggle" type="button">
         <span class="visually-hidden">Открыть/закрыть меню навигации.</span>
         <span class="main-header__toggle-line"></span>
@@ -23,7 +22,8 @@
         <span class="main-header__toggle-line"></span>
       </button>
       <a class="main-header__logo" href="index.html">
-        <img class="main-header__logo-image" src="./img/content/logo.svg" alt="Логотип Седоны." width="185" height="96">
+        <img class="main-header__logo-image" src="img/svg/content/logo.svg" alt="Логотип Седоны." width="185"
+          height="96">
       </a>
       <nav class="main-header__nav">
         <ul class="main-header__list">
@@ -47,79 +47,72 @@
       <h1 class="visually-hidden">Сайт городка Седона.</h1>
       <section class="greetings greetings--index">
         <h2 class="visually-hidden">Седона - сервис бронирования отелей.</h2>
-        <img class="greetings__image greetings__image--index" src="./img/content/text-index.svg"
+        <img class="greetings__image greetings__image--index" src="img/svg/content/text-index.svg"
           alt="Добро пожаловать в Седону." width="282" height="214">
       </section>
       <section class="advantages">
         <div class="advantages__heading heading">
           <h2 class="heading__title">Седона&nbsp;&mdash; небольшой городок в&nbsp;Аризоне, заслужвающий большего!</h2>
-          <p class="heading__description">Рассмотрим 5&nbsp;причин, по&nbsp;которым Седона круче, чем гранд каньон!
-          </p>
+          <p class="heading__description">Рассмотрим 5&nbsp;причин, по&nbsp;которым Седона круче, чем гранд каньон!</p>
         </div>
         <div class="advantages-content">
           <figure class="advantages-content__post advantages-content__post--blue-background">
             <figcaption class="advantages-content__specification">
-              <h2 class="advantages-content__title advantages-content__title--white-text">Настоящий
-                городок</h2>
+              <h2 class="advantages-content__title advantages-content__title--white-text">Настоящий городок</h2>
               <span class="advantages-content__counter advantages-content__counter--white-text counter">— №1 —</span>
-              <p class="advantages-content__description advantages-content__description--white-text">
-                Седона не&nbsp;аттракцион для туристов,<br> там течет своя жизнь</p>
+              <p class="advantages-content__description advantages-content__description--white-text">Седона
+                не&nbsp;аттракцион для туристов,<span></span> там течет своя жизнь</p>
             </figcaption>
             <picture>
               <source type="image/webp" media="(min-width: 1200px)"
-                srcset="./img/advantages/webp/sedona-town-desktop.webp 1x, ./img/advantages/webp/sedona-town-desktop@2x.webp 2x">
+                srcset="img/advantages/sedona-town-desktop.webp, img/advantages/sedona-town-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)"
-                srcset="./img/advantages/webp/sedona-town-tablet.webp 1x, ./img/advantages/webp/sedona-town-tablet@2x.webp 2x">
+                srcset="img/advantages/sedona-town-tablet.webp, img/advantages/sedona-town-tablet@2x.webp 2x">
               <source type="image/webp"
-                srcset="./img/advantages/webp/sedona-town-mobile.webp 1x, ./img/advantages/webp/sedona-town-mobile@2x.webp 2x">
+                srcset="img/advantages/sedona-town-mobile.webp, img/advantages/sedona-town-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)"
-                srcset="./img/advantages/sedona-town-desktop.jpg 1x, ./img/advantages/sedona-town-desktop@2x.jpg 2x">
+                srcset="img/advantages/sedona-town-desktop.jpg, img/advantages/sedona-town-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)"
-                srcset="./img/advantages/sedona-town-tablet.jpg 1x, ./img/advantages/sedona-town-tablet@2x.jpg 2x">
-              <img class="advantages-content__images" src="./img/advantages/sedona-town-mobile.jpg" width="320"
-                height="260" srcset="./img/advantages/sedona-town-mobile@2x.jpg 2x"
-                alt="Изображение городка среди гор.">
+                srcset="img/advantages/sedona-town-tablet.jpg, img/advantages/sedona-town-tablet@2x.jpg 2x">
+              <img class="advantages-content__images" src="img/advantages/sedona-town-mobile.jpg" width="320"
+                height="260" srcset="img/advantages/sedona-town-mobile@2x.jpg 2x" alt="Изображение городка среди гор.">
             </picture>
           </figure>
           <ul class="advantages-content__list">
             <li class="advantages-content__item advantages-content__item--home">
               <h3 class="advantages-content__heading">Жилье</h3>
-              <p class="advantages-content__definition">Рекомендуем пожить в
-                настоящем мотеле, все как в кино!</p>
+              <p class="advantages-content__definition">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </li>
             <li class="advantages-content__item advantages-content__item--food">
               <h3 class="advantages-content__heading">Еда</h3>
-              <p class="advantages-content__definition">Всегда заказывайте
-                фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!
-              </p>
+              <p class="advantages-content__definition">Всегда заказывайте фирменный бургер,
+                вы&nbsp;не&nbsp;разочаруетесь!</p>
             </li>
             <li class="advantages-content__item advantages-content__item--souvenirs">
               <h3 class="advantages-content__heading">Сувениры</h3>
-              <p class="advantages-content__definition">Не&nbsp;только китайского, но
-                и местного производства!</p>
+              <p class="advantages-content__definition">Не&nbsp;только китайского, но и местного производства!</p>
             </li>
           </ul>
           <figure class="advantages-content__post advantages-content__post--blue-background">
             <figcaption class="advantages-content__specification advantages-content__specification--order-reverse">
-              <h2 class="advantages-content__title advantages-content__title--white-text">Там есть мост
-                дьявола</h2>
+              <h2 class="advantages-content__title advantages-content__title--white-text">Там есть мост дьявола</h2>
               <span class="advantages-content__counter advantages-content__counter--white-text counter">— №2 —</span>
-              <p class="advantages-content__description advantages-content__description--white-text">Да,
-                по&nbsp;нему можно пройти!<br> Если вы осмелитесь, конечно</p>
+              <p class="advantages-content__description advantages-content__description--white-text">Да, по&nbsp;нему
+                можно пройти!<span></span> Если вы осмелитесь, конечно</p>
             </figcaption>
             <picture>
               <source type="image/webp" media="(min-width: 1200px)"
-                srcset="./img/advantages/webp/devil-bridge-desktop.webp 1x, ./img/advantages/webp/devil-bridge-desktop@2x.webp 2x">
+                srcset="img/advantages/devil-bridge-desktop.webp, img/advantages/devil-bridge-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)"
-                srcset="./img/advantages/webp/devil-bridge-tablet.webp 1x, ./img/advantages/webp/devil-bridge-tablet@2x.webp 2x">
+                srcset="img/advantages/devil-bridge-tablet.webp, img/advantages/devil-bridge-tablet@2x.webp 2x">
               <source type="image/webp"
-                srcset="./img/advantages/webp/devil-bridge-mobile.webp 1x, ./img/advantages/webp/devil-bridge-mobile@2x.webp 2x">
+                srcset="img/advantages/devil-bridge-mobile.webp, ./img/advantages/devil-bridge-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)"
-                srcset="./img/advantages/devil-bridge-desktop.jpg 1x, ./img/advantages/devil-bridge-desktop@2x.jpg 2x">
+                srcset="img/advantages/devil-bridge-desktop.jpg, img/advantages/devil-bridge-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)"
-                srcset="./img/advantages/devil-bridge-tablet.jpg 1x, ./img/advantages/devil-bridge-tablet@2x.jpg 2x">
-              <img class="advantages-content__images" src="./img/advantages/devil-bridge-mobile.jpg" width="320"
-                height="260" srcset="./img/advantages/devil-bridge-mobile@2x.jpg 2x"
+                srcset="img/advantages/devil-bridge-tablet.jpg, img/advantages/devil-bridge-tablet@2x.jpg 2x">
+              <img class="advantages-content__images" src="img/advantages/devil-bridge-mobile.jpg" width="320"
+                height="260" srcset="img/advantages/devil-bridge-mobile@2x.jpg 2x"
                 alt="Изображение моста над пропастью.">
             </picture>
           </figure>
@@ -132,8 +125,8 @@
             <li class="advantages-content__privileage-item">
               <h2 class="advantages-content__privileage-title">Красивая дорога</h2>
               <span class="advantages-content__privileage-counter counter">— №4 —</span>
-              <p class="advantages-content__privileage-description">Ехать в&nbsp;Седону из&nbsp;Лас-Вегаса совсем <br>
-                не&nbsp;скучно!</p>
+              <p class="advantages-content__privileage-description">Ехать в&nbsp;Седону из&nbsp;Лас-Вегаса
+                совсем<span></span> не&nbsp;скучно!</p>
             </li>
             <li class="advantages-content__privileage-item">
               <h2 class="advantages-content__privileage-title">Мало туристов</h2>
@@ -147,24 +140,31 @@
       <section class="search-hotels">
         <div class="search-hotels__heading heading">
           <h2 class="heading__title heading__title--big-font">Заинтересовались?</h2>
-          <p class="heading__description">Укажите предполагаемые
-            даты поездки,<br> и&nbsp;мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;седоне</p>
+          <p class="heading__description">Укажите предполагаемые даты поездки,<span></span> и&nbsp;мы&nbsp;покажем вам лучшие
+            предложения гостиниц в&nbsp;седоне</p>
         </div>
         <!-- Для состояния disabled убрать href -->
-        <a class="search-hotels__button button" href="#">Найти гостиницу</a>
+        <a class="search-hotels__button button" href="#">Найти
+          гостиницу</a>
       </section>
       <section class="map-content">
         <h2 class="visually-hidden">Местоположение Седоны.</h2>
         <picture>
-          <source media="(min-width: 1200px)" srcset="./img/map/map-desktop.jpg 1x, ./img/map/map-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="./img/map/map-tablet.jpg 1x, ./img/map/map-tablet@2x.jpg 2x">
-          <img class="map-content__image" src="./img/map/map-mobile.jpg" width="320" height="350"
-            srcset="./img/map/map-mobile@2x.jpg 2x" alt="Карта городка Седона.">
+          <source type="image/webp" media="(min-width: 1200px)"
+            srcset="img/map/map-desktop.webp, img/map/map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/map/map-tablet.webp, img/map/map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/map/map-mobile.webp, img/map/map-mobile@2x.webp 2x">
+          <source media="(min-width: 1200px)" srcset="img/map/map-desktop.jpg, img/map/map-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/map/map-tablet.jpg, img/map/map-tablet@2x.jpg 2x">
+          <img class="map-content__image" src="img/map/map-mobile.jpg" width="320" height="350"
+            srcset="img/map/map-mobile@2x.jpg 2x" alt="Карта городка Седона.">
         </picture>
         <iframe class="map-content__iframe"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d72015.97872424727!2d-111.80634858842474!3d34.85538945720919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1682006511557!5m2!1sru!2sru"
           width="320" height="350" style="border: 0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade" title="Карта городка Седона."></iframe>
+          referrerpolicy="no-referrer-when-downgrade" title="Карта городка Седона.">
+        </iframe>
       </section>
     </main>
     <footer class="main-footer">
@@ -187,11 +187,11 @@
         </li>
       </ul>
       <div class="main-footer__copyright-wrapper">
-        <a class="main-footer__copyright" href="https://htmlacademy.ru/" target="_blank" rel="nofollow noopener">
+        <a class="main-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="nofollow noopener">
           <span class="main-footer__copyright-text">Разработано</span>
-          <span class="visually-hidden">Переход на главную страницу HTML академии.</span>
+          <span class="visually-hidden">Переход на страницу курса адаптивной вёрстки.</span>
           <svg class="main-footer__copyright-logo" aria-hidden="true" focusable="false" width="27" height="35">
-            <use xlink:href="img/sprite.svg#copyright-icon"></use>
+            <use xlink:href="img/stack.svg#icon-copyright"></use>
           </svg>
         </a>
       </div>
