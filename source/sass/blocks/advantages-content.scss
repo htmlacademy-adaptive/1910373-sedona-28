@@ -28,7 +28,7 @@
 }
 
 .advantages-content__specification {
-  padding: 37px 18px;
+  padding: 48px 18px 39px 18px;
 
   @media (min-width: $vp-768) {
     padding: 52px 33px 31px 33px;
@@ -39,15 +39,18 @@
   }
 
   &--order-reverse {
+    padding: 39px 18px 37px 18px;
+
     @media (min-width: $vp-768) {
       order: 1;
+      padding: 53px 18px 31px 18px;
     }
   }
 }
 
 .advantages-content__list {
   margin: 0;
-  padding: 23px 18px 46px 18px;
+  padding: 32px 18px 44px 18px;
 
   list-style: none;
 
@@ -66,17 +69,17 @@
   padding: 0 0 0 47px;
 
   @media (min-width: $vp-768) {
-    padding: 158px 37px 60px 37px;
+    padding: 157px 37px 61px 37px;
   }
 
   @media (min-width: $vp-1200) {
-    padding: 169px 50px 69px 50px;
+    padding: 169px 50px 70px 50px;
   }
 
   &--home::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -9px;
     left: 0;
 
     width: 40px;
@@ -109,7 +112,7 @@
   &--food::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -9px;
     left: 0;
 
     width: 40px;
@@ -142,7 +145,7 @@
   &--souvenirs::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -9px;
     left: 0;
 
     width: 40px;
@@ -174,7 +177,7 @@
 }
 
 .advantages-content__item:not(:last-child) {
-  margin-bottom: 25px;
+  margin-bottom: 33px;
 
   @media (min-width: $vp-768) {
     margin: 0;
@@ -192,6 +195,9 @@
   text-transform: uppercase;
 
   @media (min-width: $vp-768) {
+    margin: 0 0 23px 0;
+
+    font-size: 21px;
     text-align: center;
   }
 }
@@ -210,6 +216,18 @@
   @media (min-width: $vp-768) {
     text-align: center;
   }
+
+  br {
+    display: none;
+
+    @media (min-width: $vp-768) {
+      display: inline;
+    }
+
+    @media (min-width: $vp-1200) {
+      display: inline;
+    }
+  }
 }
 
 .advantages-content__title {
@@ -225,10 +243,18 @@
 
   @media (min-width: $vp-768) {
     max-width: 216px;
-    margin: 0 auto 11px auto;
+    margin: 0 auto 14px auto;
 
     font-size: 21px;
     line-height: 26px;
+  }
+
+  br {
+    display: none;
+
+    @media (min-width: $vp-768) {
+      display: inline;
+    }
   }
 }
 
@@ -242,18 +268,31 @@
   text-align: center;
   color: $color-default-white;
   text-transform: uppercase;
-}
 
-.advantages-content__description span::after {
+  @media (min-width: $vp-768) {
+    max-width: 190px;
+    margin: 0 auto;
+  }
+
   @media (min-width: $vp-1200) {
-    content: "\A";
+    max-width: 290px;
+  }
 
-    white-space: pre;
+  br {
+    display: none;
+
+    @media (min-width: $vp-1200) {
+      display: inline;
+    }
   }
 }
 
 .advantages-content__counter {
   margin: 0 0 17px 0;
+
+  @media (min-width: $vp-768) {
+    margin: 0 0 23px 0;
+  }
 
   &--white-text {
     color: $color-default-white;
@@ -289,14 +328,26 @@
 }
 
 .advantages-content__privileage-item {
-  padding: 0 13px 49px 13px;
+  margin: 0 14px 49px 14px;
+
+  &:last-child {
+    margin-bottom: 0;
+
+    @media (min-width: $vp-768) {
+      margin-bottom: 42px;
+    }
+
+    @media (min-width: $vp-1200) {
+      margin-bottom: 53px;
+    }
+  }
 
   @media (min-width: $vp-768) {
-    padding: 41px 33px 51px 33px;
+    margin: 41px 33px 42px 33px;
   }
 
   @media (min-width: $vp-1200) {
-    padding: 52px 50px;
+    margin: 52px 50px 53px 50px;
   }
 }
 
@@ -311,15 +362,14 @@
 
   @media (min-width: $vp-768) {
     max-width: 159px;
-    margin: 0 auto 11px auto;
+    margin: 0 auto 13px auto;
 
     font-size: 21px;
   }
 }
 
 .advantages-content__privileage-description {
-  max-width: 257px;
-  margin: 0 auto;
+  margin: 0;
 
   font-style: normal;
   font-weight: 400;
@@ -329,20 +379,12 @@
   color: $color-night-rider;
   text-transform: uppercase;
 
-  @media (min-width: $vp-1200) {
-    max-width: 300px;
-  }
-}
-
-.advantages-content__privileage-description span::after {
-  @media (min-width: $vp-768) {
-    content: "\A";
-
-    white-space: pre;
-  }
-
-  @media (min-width: ($vp-768 + 18px)) {
+  br {
     display: none;
+
+    @media (min-width: $vp-768) {
+      display: inline;
+    }
   }
 }
 
@@ -350,4 +392,8 @@
   margin: 0 0 17px 0;
 
   color: $color-night-rider;
+
+  @media (min-width: $vp-768) {
+    margin: 0 0 23px 0;
+  }
 }

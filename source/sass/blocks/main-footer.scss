@@ -1,15 +1,23 @@
 .main-footer {
   display: flex;
   flex-direction: column;
-  padding: 33px 82px 33px 82px;
+  padding: 41px 82px 33px 82px;
 
   gap: 30px;
+
+  &--padding-catalog {
+    padding-top: 34px;
+  }
 
   @media (min-width: $vp-768) {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 36px 60px;
+  }
+
+  @media (min-width: $vp-1200) {
+    padding: 38px 121px;
   }
 }
 
@@ -25,6 +33,7 @@
 
   @media (min-width: $vp-768) {
     align-self: start;
+    margin-top: 10px;
   }
 }
 
@@ -118,6 +127,7 @@
 
   @media (min-width: $vp-768) {
     align-self: start;
+    margin-top: 6px;
     padding: 0;
   }
 }
@@ -156,6 +166,8 @@
 }
 
 .main-footer__copyright-logo {
+  flex-shrink: 0;
+
   color: $color-default-black;
 
   background-repeat: no-repeat;

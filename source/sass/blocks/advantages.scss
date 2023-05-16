@@ -1,9 +1,13 @@
 .advantages__heading {
   max-width: 768px;
   margin: 0 auto;
-  padding: 32px 25px;
+  padding: 33px 25px 38px 25px;
 
   @media (min-width: $vp-768) {
     padding: 47px 125px 55px 125px;
+  }
+
+  @media (min-width: $vp-1200) {
+    padding: 59px 125px 43px 125px;
   }
 }
