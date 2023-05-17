@@ -69,7 +69,7 @@
   padding: 0 0 0 47px;
 
   @media (min-width: $vp-768) {
-    padding: 157px 37px 61px 37px;
+    padding: 156px 37px 62px 37px;
   }
 
   @media (min-width: $vp-1200) {
@@ -89,23 +89,23 @@
     background-repeat: no-repeat;
 
     @media (min-width: $vp-768) {
-      top: 60px;
+      top: 59px;
       left: 50%;
 
-      width: 77px;
-      height: 72px;
+      width: 79px;
+      height: 73px;
 
-      background-size: 77px 72px;
-      transform: translate(-50%);
+      transform: translate(-50%) scaleX(1.04);
     }
 
     @media (min-width: $vp-1200) {
-      top: 69px;
+      top: 68px;
+      left: 50%;
 
-      width: 79px;
-      height: 72px;
+      width: 82px;
+      height: 74px;
 
-      background-size: 79px 72px;
+      transform: translate(-50%);
     }
   }
 
@@ -122,23 +122,23 @@
     background-repeat: no-repeat;
 
     @media (min-width: $vp-768) {
-      top: 62px;
+      top: 60px;
       left: 50%;
 
-      width: 80px;
-      height: 68px;
+      width: 84px;
+      height: 70px;
 
-      background-size: 80px 68px;
       transform: translate(-50%);
     }
 
     @media (min-width: $vp-1200) {
-      top: 69px;
+      top: 72px;
+      left: 50%;
 
       width: 73px;
-      height: 69px;
+      height: 68px;
 
-      background-size: 73px 69px;
+      transform: translate(-50%) scaleY(1.07);
     }
   }
 
@@ -155,23 +155,24 @@
     background-repeat: no-repeat;
 
     @media (min-width: $vp-768) {
-      top: 64px;
+      top: 62px;
       left: 50%;
 
-      width: 66px;
-      height: 75px;
+      width: 70px;
+      height: 77px;
 
-      background-size: 66px 75px;
-      transform: translate(-50%);
+      background-size: 73px 75px;
+      transform: translate(-50%) scaleX(1.04);
     }
 
     @media (min-width: $vp-1200) {
       top: 69px;
+      left: 50%;
 
       width: 77px;
       height: 75px;
 
-      background-size: 77px 75px;
+      transform: translate(-50%) scaleX(1.22);
     }
   }
 }
