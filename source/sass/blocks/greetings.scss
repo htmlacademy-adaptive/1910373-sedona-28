@@ -6,8 +6,6 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  clip-path: polygon(0 0, 100% 0, 100% 92%, 50% 100%, 0 92%);
-
   @media (min-resolution: 2dppx) {
     background-image: url("../img/greetings/back-mobile@2x.jpg");
   }
@@ -15,23 +13,19 @@
   @media (min-width: $vp-768) {
     background-image: url("../img/greetings/back-tablet.jpg");
 
-    clip-path: none;
-
     &::before {
-      @media (min-width: $vp-768) {
-        content: "";
-        position: absolute;
-        bottom: -1px;
-        left: 0;
+      content: "";
+      position: absolute;
+      bottom: -1px;
+      left: 0;
 
-        width: 100%;
-        height: 58px;
+      width: 100%;
+      height: 58px;
 
-        background-image: url("../img/stack.svg#icon-intro-triangle");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 1200px;
-      }
+      background-image: url("../img/stack.svg#icon-intro-triangle");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 1200px;
     }
 
     @media (min-resolution: 2dppx) {
@@ -42,8 +36,6 @@
   @media (min-width: $vp-1200) {
     background-image: url("../img/greetings/back-desktop.jpg");
 
-    clip-path: none;
-
     @media (min-resolution: 2dppx) {
       background-image: url("../img/greetings/back-desktop@2x.jpg");
     }
@@ -52,12 +44,18 @@
   &--index {
     padding: 90px 19px 85px 19px;
 
+    clip-path: polygon(0 0, 100% 0, 100% 93%, 50% 100%, 0 93%);
+
     @media (min-width: $vp-768) {
       padding: 77px 154px 91px 153px;
+
+      clip-path: none;
     }
 
     @media (min-width: $vp-1200) {
       padding: 78px 370px 90px 370px;
+
+      clip-path: none;
     }
   }
 
@@ -66,12 +64,18 @@
 
     background-position: bottom;
 
+    clip-path: polygon(0 0, 100% 0, 100% 84%, 50% 100%, 0 84%);
+
     @media (min-width: $vp-768) {
       padding: 95px 46px 117px 45px;
+
+      clip-path: none;
     }
 
     @media (min-width: $vp-1200) {
       padding: 101px 371px 120px 369px;
+
+      clip-path: none;
     }
   }
 }
@@ -89,7 +93,7 @@
 
   &--inner {
     @media (min-width: $vp-768) {
-      width: 457px;
+      width: 459px;
       height: 78px;
     }
   }

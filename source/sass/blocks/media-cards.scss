@@ -18,22 +18,45 @@
 }
 
 .media-cards__content {
-  margin: 0 0 16px 0;
+  margin: 0 0 7px 0;
 
   @media (min-width: $vp-768) {
     margin: 0;
+  }
+
+  @media (min-width: $vp-1200) {
+    display: flex;
+    flex-direction: column;
+
+    gap: 4px;
   }
 }
 
 .media-cards__item {
   position: relative;
 
-  margin: 0 0 50px 0;
+  margin: 0 0 51px 0;
+
+  &:last-child {
+    margin: 0;
+  }
+
+  @media (min-width: $vp-768) {
+    margin: 0;
+
+    &:not(.media-cards__item--full):nth-child(odd) .media-cards__specification {
+      background-color: $color-whisper2;
+
+      @media (min-width: $vp-1200) {
+        background-color: rgba($color-default-black, 0.3);
+      }
+    }
+  }
 
   &::before {
     content: "";
     position: absolute;
-    top: -24px;
+    top: -25px;
     left: -20px;
 
     width: 100vw;
@@ -44,10 +67,6 @@
     @media (min-width: $vp-768) {
       display: none;
     }
-  }
-
-  @media (min-width: $vp-768) {
-    margin: 0;
   }
 
   &--full {
@@ -96,7 +115,7 @@
     }
 
     @media (min-width: $vp-1200) {
-      padding-top: 327px;
+      padding-top: 321px;
     }
   }
 }
@@ -136,7 +155,7 @@
 
   transition: 0.2s ease;
 
-  @media (min-width: $vp-768), (min-width: $vp-1200) {
+  @media (min-width: $vp-768) {
     position: absolute;
     top: 0;
     left: 0;
@@ -185,9 +204,18 @@
   align-self: start;
 
   gap: 14px;
+
+  @media (min-width: $vp-768) {
+    gap: 10px;
+  }
+
+  @media (min-width: $vp-1200) {
+    gap: 9px;
+  }
 }
 
 .media-cards__button {
+  flex-shrink: 0;
   width: 23px;
   height: 21px;
   padding: 0;
@@ -229,6 +257,8 @@
   }
 
   @media (min-width: $vp-1200) {
+    margin-top: 10px;
+
     background-color: $color-default-white;
     opacity: 1;
   }
@@ -248,6 +278,8 @@
   }
 
   @media (min-width: $vp-1200) {
+    margin-top: 13px;
+
     color: $color-default-white;
   }
 }
@@ -261,29 +293,13 @@
     display: flex;
     flex-grow: 1;
     justify-content: space-between;
-    padding: 22px 20px 15px 20px;
+    padding: 23px 20px 15px 20px;
+
+    background-color: $color-white-smoke;
 
     gap: 30px;
-  }
-
-  &--background-darken {
-    @media (min-width: $vp-768) {
-      background-color: $color-whisper2;
-    }
 
     @media (min-width: $vp-1200) {
-      background-color: rgba($color-default-black, 0.3);
-    }
-  }
-
-  &--background {
-    @media (min-width: $vp-768) {
-      background-color: $color-white-smoke;
-    }
-
-    @media (min-width: $vp-1200) {
-      flex-grow: 1;
-
       background-color: rgba($color-default-black, 0.3);
     }
   }
@@ -291,5 +307,13 @@
   @media (min-width: $vp-1200) {
     position: relative;
     z-index: 1;
+
+    padding: 18px 20px 16px 25px;
+  }
+
+  &--padding {
+    @media (min-width: $vp-1200) {
+      padding: 20px 20px 13px 20px;
+    }
   }
 }

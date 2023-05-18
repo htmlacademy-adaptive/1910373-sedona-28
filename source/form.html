@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon/favicon-svg.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/favicon-apple.png">
@@ -21,8 +23,9 @@
         <span class="main-header__toggle-line"></span>
         <span class="main-header__toggle-line"></span>
       </button>
-      <a class="main-header__logo" href="index.html">
-        <img class="main-header__logo-image" src="img/svg/content/logo.svg" alt="Логотип Седоны." width="185" height="96">
+      <a class="main-header__logo" href="index.html" aria-label="Переход на главную страницу сайта Седоны.">
+        <img class="main-header__logo-image" src="img/svg/content/logo.svg" alt="Логотип Седоны." width="185"
+          height="96">
       </a>
       <nav class="main-header__nav">
         <ul class="main-header__list">
@@ -36,7 +39,8 @@
             <span class="main-header__link main-header__link--current">Форма отзыва</span>
           </li>
           <li class="main-header__item">
-            <a class="main-header__link" href="https://htmlacademy.ru/" target="_blank" rel="nofollow noopener">Html
+            <a class="main-header__link" href="https://htmlacademy.ru/" target="_blank" rel="nofollow noopener"
+              aria-label="Переход на главную старницу сайта HTML Академии.">Html
               academy</a>
           </li>
         </ul>
@@ -53,7 +57,7 @@
         <div class="feedback__heading heading">
           <h2 class="heading__title heading__title--large-font">Оставьте свой отзыв</h2>
           <p class="heading__description">Помогите нашим отелям стать лучше! оставьте отзыв о&nbsp;них, а также
-            о&nbsp;посещенных вами достопримечательностях</p>
+            о посещенных вами достопримечательностях</p>
         </div>
         <form class="feedback__form form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="form__fieldset">
@@ -155,8 +159,8 @@
             <h3 class="form__title">Опишите свои эмоции:</h3>
             <label class="form__label text-field">
               <span class="visually-hidden">Опишите подробно все свои восторги.</span>
-              <textarea class="text-field__input text-field__input--resize-non" name="feedback-textarea" cols="30"
-                rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
+              <textarea class="text-field__input text-field__input--max-height text-field__input--resize-non"
+                name="feedback-textarea" cols="30" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
             </label>
           </fieldset>
           <div class="form__button-wrapper">
@@ -187,7 +191,8 @@
         </li>
       </ul>
       <div class="main-footer__copyright-wrapper">
-        <a class="main-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="nofollow noopener">
+        <a class="main-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank"
+          rel="nofollow noopener">
           <span class="main-footer__copyright-text">Разработано</span>
           <span class="visually-hidden">Переход на страницу курса адаптивной вёрстки.</span>
           <svg class="main-footer__copyright-logo" aria-hidden="true" focusable="false" width="27" height="35">
@@ -195,18 +200,22 @@
           </svg>
         </a>
       </div>
-    </footer><!-- добавить класс open-fail / open-success -->
+    </footer>
+    <!-- добавить класс is-open -->
     <div class="modal">
       <div class="modal__content modal__content--failure">
         <h2 class="modal__content-title">Что-то пошло не&nbsp;так!</h2>
         <p class="modal__content-text">Проверьте поля, выделенные красным, скорее всего вы забыли их&nbsp;заполнить</p>
-        <button class="button button--error">Ок</button>
+        <button class="button button--error" type="button">Ок</button>
       </div>
+    </div>
+    <!-- добавить класс is-open -->
+    <div class="modal">
       <div class="modal__content modal__content--success">
         <h2 class="modal__content-title">Ваш отзыв отправлен!</h2>
-        <p class="modal__content-text">Спасибо за&nbsp;ваше участие, ваш<span></span> отзыв уже поступил к&nbsp;нам. В&nbsp;ближайшее
-          время мы<span></span> опубликуем его на&nbsp;сайте.</p>
-          <button class="button button--success">Закрыть окно</button>
+        <p class="modal__content-text">Спасибо за&nbsp;ваше участие, ваш отзыв уже поступил к&nbsp;нам. В&nbsp;ближайшее
+          время мы опубликуем его на&nbsp;сайте.</p>
+        <button class="button button--success" type="button">Закрыть окно</button>
       </div>
     </div>
   </div>

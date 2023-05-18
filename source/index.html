@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon/favicon-svg.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/favicon-apple.png">
@@ -21,7 +23,7 @@
         <span class="main-header__toggle-line"></span>
         <span class="main-header__toggle-line"></span>
       </button>
-      <a class="main-header__logo" href="index.html">
+      <a class="main-header__logo" href="index.html" aria-label="Переход на главную страницу сайта Седоны.">
         <img class="main-header__logo-image" src="img/svg/content/logo.svg" alt="Логотип Седоны." width="185"
           height="96">
       </a>
@@ -37,7 +39,8 @@
             <a class="main-header__link" href="form.html">Форма отзыва</a>
           </li>
           <li class="main-header__item">
-            <a class="main-header__link" href="https://htmlacademy.ru/" target="_blank" rel="nofollow noopener">Html
+            <a class="main-header__link" href="https://htmlacademy.ru/" target="_blank" rel="nofollow noopener"
+              aria-label="Переход на главную старницу сайта HTML Академии.">Html
               academy</a>
           </li>
         </ul>
@@ -52,7 +55,7 @@
       </section>
       <section class="advantages">
         <div class="advantages__heading heading">
-          <h2 class="heading__title">Седона&nbsp;&mdash; небольшой городок в&nbsp;Аризоне, заслужвающий большего!</h2>
+          <h2 class="heading__title">Седона&nbsp;&mdash; небольшой городок в&nbsp;Аризоне, заслуживающий большего!</h2>
           <p class="heading__description">Рассмотрим 5&nbsp;причин, по&nbsp;которым Седона круче, чем гранд каньон!</p>
         </div>
         <div class="advantages-content">
@@ -90,15 +93,15 @@
             </li>
             <li class="advantages-content__item advantages-content__item--souvenirs">
               <h3 class="advantages-content__heading">Сувениры</h3>
-              <p class="advantages-content__definition">Не&nbsp;только китайского, но и местного производства!</p>
+              <p class="advantages-content__definition">Не&nbsp;только китайского,<br> но и местного производства!</p>
             </li>
           </ul>
           <figure class="advantages-content__post advantages-content__post--blue-background">
             <figcaption class="advantages-content__specification advantages-content__specification--order-reverse">
-              <h2 class="advantages-content__title advantages-content__title--white-text">Там есть мост дьявола</h2>
+              <h2 class="advantages-content__title advantages-content__title--white-text">Там есть<br> мост дьявола</h2>
               <span class="advantages-content__counter advantages-content__counter--white-text counter">— №2 —</span>
               <p class="advantages-content__description advantages-content__description--white-text">Да, по&nbsp;нему
-                можно пройти!<span></span> Если вы осмелитесь, конечно</p>
+                можно пройти!<br> Если вы осмелитесь, конечно</p>
             </figcaption>
             <picture>
               <source type="image/webp" media="(min-width: 1200px)"
@@ -126,7 +129,7 @@
               <h2 class="advantages-content__privileage-title">Красивая дорога</h2>
               <span class="advantages-content__privileage-counter counter">— №4 —</span>
               <p class="advantages-content__privileage-description">Ехать в&nbsp;Седону из&nbsp;Лас-Вегаса
-                совсем<span></span> не&nbsp;скучно!</p>
+                совсем<br> не&nbsp;скучно!</p>
             </li>
             <li class="advantages-content__privileage-item">
               <h2 class="advantages-content__privileage-title">Мало туристов</h2>
@@ -139,8 +142,8 @@
       </section>
       <section class="search-hotels">
         <div class="search-hotels__heading heading">
-          <h2 class="heading__title heading__title--big-font">Заинтересовались?</h2>
-          <p class="heading__description">Укажите предполагаемые даты поездки,<span></span> и&nbsp;мы&nbsp;покажем вам лучшие
+          <h2 class="heading__title heading__title--margin-index heading__title--big-font">Заинтересовались?</h2>
+          <p class="heading__description">Укажите предполагаемые даты поездки,<br> и&nbsp;мы&nbsp;покажем вам лучшие
             предложения гостиниц в&nbsp;седоне</p>
         </div>
         <!-- Для состояния disabled убрать href -->
@@ -187,7 +190,8 @@
         </li>
       </ul>
       <div class="main-footer__copyright-wrapper">
-        <a class="main-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="nofollow noopener">
+        <a class="main-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank"
+          rel="nofollow noopener">
           <span class="main-footer__copyright-text">Разработано</span>
           <span class="visually-hidden">Переход на страницу курса адаптивной вёрстки.</span>
           <svg class="main-footer__copyright-logo" aria-hidden="true" focusable="false" width="27" height="35">

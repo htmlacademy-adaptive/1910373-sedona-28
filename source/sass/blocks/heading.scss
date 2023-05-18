@@ -1,5 +1,5 @@
 .heading__title {
-  margin: 0 0 35px 0;
+  margin: 0 0 37px;
 
   font-style: normal;
   font-weight: 700;
@@ -8,11 +8,18 @@
   text-align: center;
   text-transform: uppercase;
 
+  @media (min-width: $vp-768) {
+    margin: 0 0 31px;
+
+    font-size: 21px;
+  }
+
   &--big-font {
     font-size: 21px;
     line-height: 26px;
 
     @media (min-width: $vp-768) {
+      margin-bottom: 33px;
       padding: 0;
 
       font-size: 30px;
@@ -22,6 +29,31 @@
   &--large-font {
     @media (min-width: $vp-768) {
       font-size: 30px;
+    }
+  }
+
+  &--margin-index {
+    margin-bottom: 22px;
+
+    @media (min-width: $vp-768) {
+      margin-bottom: 33px;
+      padding: 0;
+    }
+  }
+
+  &--margin-catalog {
+    margin-bottom: 26px;
+
+    @media (min-width: $vp-768) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &--margin-video {
+    margin-bottom: 26px;
+
+    @media (min-width: $vp-768) {
+      margin-bottom: 30px;
     }
   }
 }
@@ -36,12 +68,12 @@
   text-align: center;
   color: $color-night-rider;
   text-transform: uppercase;
-}
 
-.heading__description span::after {
-  @media (min-width: $vp-768) {
-    content: "\A";
+  br {
+    display: none;
 
-    white-space: pre;
+    @media (min-width: $vp-768) {
+      display: block;
+    }
   }
 }

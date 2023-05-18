@@ -3,4 +3,3 @@ const mainHeader = document.querySelector('.main-header');
 
 mainHeader.classList.remove('no-js');
 burgerBtn.addEventListener('click', () => mainHeader.classList.toggle('is-open'));
-

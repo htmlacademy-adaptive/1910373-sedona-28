@@ -1,5 +1,5 @@
 .form {
-  padding: 0 20px 22px 20px;
+  padding: 0 20px 15px 20px;
 
   @media (min-width: $vp-768) {
     display: grid;
@@ -13,7 +13,9 @@
   }
 
   @media (min-width: $vp-1200) {
-    margin: 0 120px 64px 120px;
+    margin: 0 120px 63px 120px;
+
+    column-gap: 99px;
   }
 }
 
@@ -27,11 +29,11 @@
     display: grid;
     padding: 0 36px;
 
-    gap: 16px;
+    gap: 12px;
   }
 
   @media (min-width: $vp-1200) {
-    padding: 17px 53px;
+    padding: 17px 12px 17px 53px;
 
     gap: 28px;
     grid-template-columns: repeat(3, 1fr);
@@ -45,7 +47,7 @@
 }
 
 .form__rating-item:not(:last-child) {
-  margin: 0 0 16px 0;
+  margin: 0 0 12px 0;
 
   @media (min-width: $vp-768) {
     margin: 0;
@@ -66,20 +68,20 @@
     display: grid;
     padding: 0 84px;
 
-    gap: 16px 32px;
+    gap: 11px 32px;
+    grid-template-columns: 1fr 1fr;
   }
 
   @media (min-width: $vp-1200) {
-    display: flex;
-    flex-wrap: wrap;
     padding: 31px 45px;
 
     gap: 16px 64px;
+    grid-template-columns: 172px 170px 153px 184px;
   }
 }
 
 .form__attraction-item:not(:last-child) {
-  margin: 0 0 16px 0;
+  margin: 0 0 11px 0;
 
   @media (min-width: $vp-768) {
     margin: 0;
@@ -103,7 +105,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: -24px;
+    top: -25px;
     left: -20px;
 
     width: 100vw;
@@ -151,7 +153,7 @@
     }
 
     @media (min-width: $vp-1200) {
-      margin: 0 0 71px 0;
+      margin: 0 0 70px 0;
       padding: 0;
     }
   }
@@ -171,7 +173,7 @@
     }
 
     @media (min-width: $vp-1200) {
-      margin: 0 0 71px 0;
+      margin: 0 0 70px 0;
       padding: 0;
     }
   }
@@ -184,42 +186,47 @@
       left: -29px;
 
       width: 1px;
-      height: calc(100% + 15px);
+      height: calc(100% + 6px);
 
       background-color: $color-whisper3;
+    }
+
+    @media (min-width: $vp-1200) {
+      top: 0;
+      left: -49px;
+
+      height: calc(100% + 6px);
     }
   }
 
   &:nth-child(3) {
-    margin: 0 0 49px 0;
+    margin: 0 0 43px 0;
 
     @media (min-width: $vp-768) {
-      margin: 0 0 48px 0;
       padding: 0;
 
       grid-column: 1/ span 2;
     }
 
     @media (min-width: $vp-1200) {
-      margin: 0 0 56px 0;
-      padding: 0;
+      margin: 0 0 52px 0;
 
       grid-column: 1/ span 2;
     }
   }
 
   &:nth-child(4) {
-    margin: 0 0 49px 0;
+    margin: 0 0 44px 0;
 
     @media (min-width: $vp-768) {
-      margin: 0 0 42px 0;
+      margin: 0 0 38px 0;
       padding: 0;
 
       grid-column: 1/span 2;
     }
 
     @media (min-width: $vp-1200) {
-      margin: 0 0 56px 0;
+      margin: 0 0 51px 0;
     }
   }
 
@@ -230,6 +237,10 @@
       margin: 0 0 48px 0;
 
       grid-column: 1/span 2;
+    }
+
+    @media (min-width: $vp-1200) {
+      margin: 0 96px 48px 96px;
     }
   }
 
@@ -287,6 +298,8 @@
   text-transform: uppercase;
 
   @media (min-width: $vp-768) {
+    margin: 0 0 28px 0;
+
     font-size: 21px;
   }
 }
@@ -303,6 +316,12 @@
 
     grid-column: 1/ span 2;
   }
+
+  @media (min-width: $vp-1200) {
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+  }
 }
 
 .form__submit-button {
@@ -311,12 +330,12 @@
   padding: 16px 33px;
 
   @media (min-width: $vp-768) {
-    width: 50%;
+    max-width: 324px;
     margin: 0;
   }
 
   @media (min-width: $vp-1200) {
-    width: 40%;
+    max-width: 384px;
   }
 }
 
@@ -331,4 +350,11 @@
   text-align: center;
   color: rgba($color-night-rider, 0.6);
   text-transform: uppercase;
+
+  @media (min-width: $vp-768) {
+    align-self: flex-start;
+    margin-top: 22px;
+
+    font-size: 14px;
+  }
 }

@@ -38,6 +38,14 @@
     resize: none;
   }
 
+  &--max-height {
+    max-height: 150px;
+
+    @media (min-width: $vp-768) {
+      max-height: 160px;
+    }
+  }
+
   &--tel {
     padding: 16px 74px 16px 16px;
 
