@@ -14,20 +14,18 @@
     background-image: url("../img/greetings/back-tablet.jpg");
 
     &::before {
-      @media (min-width: $vp-768) {
-        content: "";
-        position: absolute;
-        bottom: -1px;
-        left: 0;
+      content: "";
+      position: absolute;
+      bottom: -1px;
+      left: 0;
 
-        width: 100%;
-        height: 58px;
+      width: 100%;
+      height: 58px;
 
-        background-image: url("../img/stack.svg#icon-intro-triangle");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 1200px;
-      }
+      background-image: url("../img/stack.svg#icon-intro-triangle");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 1200px;
     }
 
     @media (min-resolution: 2dppx) {

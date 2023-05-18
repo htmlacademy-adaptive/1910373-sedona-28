@@ -68,15 +68,15 @@
     display: grid;
     padding: 0 84px;
 
-    gap: 11px 43px;
+    gap: 11px 32px;
+    grid-template-columns: 1fr 1fr;
   }
 
   @media (min-width: $vp-1200) {
-    display: flex;
-    flex-wrap: wrap;
     padding: 31px 45px;
 
     gap: 16px 64px;
+    grid-template-columns: 172px 170px 153px 184px;
   }
 }
 
@@ -203,7 +203,6 @@
     margin: 0 0 43px 0;
 
     @media (min-width: $vp-768) {
-      margin: 0 0 43px 0;
       padding: 0;
 
       grid-column: 1/ span 2;
@@ -211,7 +210,6 @@
 
     @media (min-width: $vp-1200) {
       margin: 0 0 52px 0;
-      padding: 0;
 
       grid-column: 1/ span 2;
     }

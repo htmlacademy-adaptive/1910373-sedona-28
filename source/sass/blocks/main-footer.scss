@@ -28,7 +28,7 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
-  text-align: center;
+  align-self: center;
   text-transform: uppercase;
 
   @media (min-width: $vp-768) {
@@ -137,12 +137,10 @@
 
   text-decoration: none;
 
-  gap: 11px;
+  gap: 13px;
 
   @media (min-width: $vp-768) {
     padding: 0;
-
-    gap: 12px;
   }
 
   &:hover .main-footer__copyright-text,
@@ -183,7 +181,6 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  text-align: center;
   color: $color-default-black;
   text-transform: uppercase;
 }
