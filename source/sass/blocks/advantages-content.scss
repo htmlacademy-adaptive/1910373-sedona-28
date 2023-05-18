@@ -325,7 +325,25 @@
 }
 
 .advantages-content__privileage-item {
+  position: relative;
+
   margin: 0 14px 49px 14px;
+
+  &:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    bottom: -24px;
+    left: -14px;
+
+    width: calc(100% + 28px);
+    height: 1px;
+
+    background-color: $color-light-gray-border;
+
+    @media (min-width: $vp-768) {
+      display: none;
+    }
+  }
 
   &:last-child {
     margin-bottom: 0;

@@ -9,15 +9,3 @@
     padding: 118px 382px 68px 382px;
   }
 }
-
-.feedback__heading .heading__title {
-  margin-bottom: 24px;
-
-  @media (min-width: $vp-768) {
-    margin-bottom: 20px;
-  }
-
-  @media (min-width: $vp-1200) {
-    margin-bottom: 31px;
-  }
-}
